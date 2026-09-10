@@ -1,0 +1,58 @@
+{
+  "data/pheme/node2idx_mid.txt": {
+    "bytes": 6398198,
+    "sha256": "3ca4dd5b7f33ed5a298367c21689daf00904a80bad7ede808ed4364bf868b05b"
+  },
+  "data/pheme/mid2text.txt": {
+    "bytes": 12477469,
+    "sha256": "b307f8de77284713009f5bc955edebc21d31b7dc686780d6d3a22a729e05de04"
+  },
+  "data/pheme/pheme_temporal_data/propagation_node_idx.npy": {
+    "bytes": 3166033,
+    "sha256": "5a901a626d22c46fef1f16d20917be1df7da748610ffb9c0d8ec2857dab5b1b4"
+  },
+  "data/pheme/pheme_temporal_data/propagation_node.npy": {
+    "bytes": 11001407,
+    "sha256": "c0dadaae4ae02a0dc1d38564c6ff105b872b0da95d19d1163964906aa4a1f8b5"
+  },
+  "data/pheme/pheme_temporal_data/knowledge_node_idx.npy": {
+    "bytes": 77137869,
+    "sha256": "74fbb839588c662faa8579bbb090ea411c4417652da4919e254e77d721ad4254"
+  },
+  "data/pheme/pheme_temporal_data/knowledge_node.npy": {
+    "bytes": 4531905239,
+    "sha256": "0109192a5e4cb657c20c41bf129a3d8be43b89b49ff7a498678c388ddaedd8f8"
+  },
+  "data/pheme/pheme_temporal_data/label.npy": {
+    "bytes": 51528,
+    "sha256": "4b0eed60f0e5a8b4761357a1dd09a27fe6fbb02078e4d64744fda8fd0e95a4cc"
+  },
+  "data/pheme/pheme_temporal_data/propagation_root_index.npy": {
+    "bytes": 154328,
+    "sha256": "55d8dcf98e334b3a34e4c9f79de75ca61b47e21a9a345715e1f2a74a2cd4b77d"
+  },
+  "bert-base-uncased/config.json": {
+    "bytes": 570,
+    "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20"
+  },
+  "bert-base-uncased/vocab.txt": {
+    "bytes": 231508,
+    "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "bert-base-uncased/pytorch_model.bin": {
+    "bytes": 440473133,
+    "sha256": "097417381d6c7230bd9e3557456d726de6e83245ec8b24f529f60198a67b203a"
+  },
+  "source_sha256": {
+    "config.py": "df5805a83d7c218cd1132c8514741fed9f294402040895982f361b720c93ce5e",
+    "data.py": "8b82611147eac9bdd11b75e338f86dd58a2c94528fdb54683770e6dbf444e327",
+    "data_process.py": "083dd04586d0aad41ce27d069d60bfee9dc38acbfab23c348b7745994c446716",
+    "layers.py": "87571c40128865a291c7715266dc1cb8e87dc5e9090c310b3e2d26de5b2db872",
+    "models.py": "8432d18f25798f0697562b46ecf45fe886fba8babd8f7ff6a2282af441e77bc2",
+    "path_zh.py": "eeb2dd368f9420966a16771d0a5e563a3d156b9f64c5466435c441a589b1f947",
+    "run_baseline.py": "d764febb0132cbff4c8b34fe2a3b088421216f0f1aec743add193dc9d44ff5ae",
+    "run_paper.py": "2c51bb89478965d05353c113cc4aa44a1807767922b5953c0f6e97bfde60416b",
+    "train_dynamic.py": "e7beb785765c6ddf1ce9673e2cafeae75cea264113133c2be014fc981ef1291b",
+    "util.py": "3c2d0f5c2d09b6d4b86dbe6f45dfd915dbb59904873d142ff563d10ee0490a84"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "dataset": "pheme",
+  "model": "propagation",
+  "paper_name": "DDGCN w/o knowledge",
+  "fold": 0,
+  "seed": 2026,
+  "best_epoch": 5,
+  "validation_accuracy": 0.8536585365853658,
+  "test": {
+    "loss": 0.5868412827408832,
+    "accuracy": 0.8547826086956521,
+    "macro_precision": 0.8497237341250206,
+    "macro_recall": 0.8322940099056773,
+    "macro_f1": 0.8394868258843686,
+    "legacy_f1": 0.8409185652134615,
+    "per_class_precision": [
+      0.8643410852713178,
+      0.8351063829787234
+    ],
+    "per_class_recall": [
+      0.9151846785225718,
+      0.7494033412887828
+    ],
+    "per_class_f1": [
+      0.8890365448504983,
+      0.789937106918239
+    ],
+    "support": [
+      731,
+      419
+    ]
+  },
+  "split_sizes": [
+    4024,
+    574,
+    1150
+  ],
+  "seconds": 1136.1866247653961
+}

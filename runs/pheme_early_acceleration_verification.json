@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "events": 20,
+  "matrices_exactly_equal": 894,
+  "acceleration_sha256": "bf5d7ccb2e0bf0b00128b71241e8c39e74e95a5f442e0c61d91e7b7440950aec",
+  "reference_builder_sha256": "b571aee6587de5975e006eef2777b0e2b5146b4b7bef0f0f02e772f0c22bc54b"
+}

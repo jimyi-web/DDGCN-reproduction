@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "fold": 2,
+  "pid": 17627,
+  "checkpoint_sha256": "1be16e5bdf22d28661e439cb3c3ec0c822a0ef6c45083883fae0f86ea5e992f2",
+  "predictions_sha256": "a7851357eee4d2b81763887ccf1968e9ff2a2d6659451dba8aadfd6d58a86420",
+  "result_sha256": "d889225018371ebdc6140bb1ed6914f92a2228a1ec17ce2edb7be7b1904bf3a6",
+  "splits_sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff",
+  "source_manifest_verified": true,
+  "input_manifest_verified": true,
+  "prediction_mismatches": 0,
+  "metric_absolute_tolerance": 1e-07,
+  "device": "cuda:0",
+  "test": {
+    "loss": 0.5427165218021559,
+    "accuracy": 0.8469565217391304,
+    "macro_precision": 0.8334502923976608,
+    "macro_recall": 0.84905758940086,
+    "macro_f1": 0.8389770908315591,
+    "legacy_f1": 0.841181552614373,
+    "per_class_precision": [
+      0.9111111111111111,
+      0.7557894736842106
+    ],
+    "per_class_recall": [
+      0.841313269493844,
+      0.8568019093078759
+    ],
+    "per_class_f1": [
+      0.8748221906116642,
+      0.803131991051454
+    ],
+    "support": [
+      731,
+      419
+    ]
+  }
+}

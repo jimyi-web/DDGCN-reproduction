@@ -1,0 +1,21 @@
+{
+  "epochs": 5,
+  "batch": 32,
+  "lr": 0.001,
+  "seed": 2026,
+  "threads": 4,
+  "smoke_only": false,
+  "evaluate_run": null,
+  "output": "runs/pheme_completed_seed2026_reproduced",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "torch": "2.0.1+cu118",
+  "cuda": "11.8",
+  "split": [
+    0.7,
+    0.1,
+    0.2
+  ],
+  "model": "completed",
+  "bert_lr": 5e-05
+}

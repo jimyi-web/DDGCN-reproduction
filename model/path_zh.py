@@ -1,6 +1,8 @@
 import os
 import sys
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 
 # ============  model ==========
@@ -10,7 +12,7 @@ import sys
 # ============ data ============
 class path_Set():
     def __init__(self,dataset):
-        self.path_data_dir = os.path.join("/home/sunmengzhu2019/dual_dynamic_graph/dual_dynamic_graph", "data/{}".format(dataset))
+        self.path_data_dir = os.path.join(PROJECT_ROOT, "data/{}".format(dataset))
 
         # vocab
         # self.path_entity_concept_2id = os.path.join(self.path_data_dir, "entity_concept_2id.csv")
@@ -32,11 +34,11 @@ class path_Set():
         self.path_root_idx = os.path.join(self.path_data_dir, "{}_temporal_data/propagation_root_index.npy".format(dataset))
 
         #trained_model
-        self.path_saved_model = "model_saved/"
+        self.path_saved_model = os.path.join(PROJECT_ROOT, "model", "model_saved")
 
 class path_Set_BERT():
     def __init__(self,dataset):
-        self.path_data_dir = os.path.join("/home/sunmengzhu2019/dual_dynamic_graph/dual_dynamic_graph", "data/{}".format(dataset))
+        self.path_data_dir = os.path.join(PROJECT_ROOT, "data/{}".format(dataset))
 
         # vocab
         # self.path_entity_concept_2id = os.path.join(self.path_data_dir, "entity_concept_2id.csv")
@@ -58,19 +60,19 @@ class path_Set_BERT():
         self.path_root_idx = os.path.join(self.path_data_dir, "{}_temporal_data/propagation_root_index.npy".format(dataset))
 
         #trained_model
-        self.path_saved_model = "model_saved/"
+        self.path_saved_model = os.path.join(PROJECT_ROOT, "model", "model_saved")
         #BERT_PATH
         if dataset == 'weibo':
-            self.path_bert = '../bert-base-chinese/'
+            self.path_bert = os.path.join(PROJECT_ROOT, 'bert-base-chinese')
             self.VOCAB = 'vocab.txt'
         elif dataset == 'pheme':
-            self.path_bert = '../bert-base-uncased/'
+            self.path_bert = os.path.join(PROJECT_ROOT, 'bert-base-uncased')
             self.VOCAB = 'vocab.txt'
 
 class path_Set_early():
     def __init__(self,dataset,time_count):
 
-        self.path_data_dir = os.path.join("/home/sunmengzhu2019/dual_dynamic_graph/dual_dynamic_graph", "data/{}".format(dataset))
+        self.path_data_dir = os.path.join(PROJECT_ROOT, "data/{}".format(dataset))
 
         # vocab
         # self.path_entity_concept_2id = os.path.join(self.path_data_dir, "entity_concept_2id.csv")
@@ -132,11 +134,11 @@ class path_Set_early():
                                                                "{}_temporal_data_time{}_count{}/propagation_root_index_test.npy".format(
                                                                    dataset, t_c[0], t_c[1])))
         #trained_model
-        self.path_saved_model = "model_saved/"
+        self.path_saved_model = os.path.join(PROJECT_ROOT, "model", "model_saved")
         #BERT_PATH
         if dataset == 'weibo':
-            self.path_bert = '../bert-base-chinese/'
+            self.path_bert = os.path.join(PROJECT_ROOT, 'bert-base-chinese')
             self.VOCAB = 'vocab.txt'
         elif dataset == 'pheme':
-            self.path_bert = '../bert-base-uncased/'
+            self.path_bert = os.path.join(PROJECT_ROOT, 'bert-base-uncased')
             self.VOCAB = 'vocab.txt'

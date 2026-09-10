@@ -1,14 +1,14 @@
 import numpy as np
 import pickle as pkl
 import scipy.sparse as sp
-from scipy.sparse.linalg.eigen.arpack import eigsh
+from scipy.sparse.linalg import eigsh
 import sys, os
 import torch
 import re
 import string
 import torch
 import torch.nn.functional as F
-from path import *
+from path_zh import *
 import csv
 from config import *
 import random
@@ -75,129 +75,52 @@ def split_data_early(size,y, train, val, shuffle=True):
     # print('test数据正负例分布：', 'pos:', len(test_idx_pos), 'neg', len(test_idx_neg))
     return train_idx, val_idx
 
-def split_data_5fold(size,y, train, val, test, shuffle=True):
-    idx = list(range(size))
-    # label_dict = {}
-    idx_pos = []
-    idx_neg = []
-    for idx_temp in idx:
-        # label_dict[idx_temp] = y[idx_temp].item()
-        if y[idx_temp].item() == 1:
-            idx_neg.append(idx_temp)
-        elif y[idx_temp].item() == 0:
-            idx_pos.append(idx_temp)
-    print('数据正负例分布：','pos:',len(idx_pos),'neg',len(idx_neg))
+def split_data_5fold(size, y, train, val, test, shuffle=True):
+    """Return five stratified 70/10/20 folds with complete test coverage."""
+    if size != len(y):
+        raise ValueError('size and label count differ')
+    if not np.isclose(train + val + test, 1.0):
+        raise ValueError('train, val and test must sum to one')
+    if not np.isclose(test, 0.2):
+        raise ValueError('five-fold cross validation requires test=0.2')
+    by_label = {0: [], 1: []}
+    for sample_idx in range(size):
+        label = int(y[sample_idx].item())
+        if label not in by_label:
+            raise ValueError('DDGCN expects binary labels 0 and 1')
+        by_label[label].append(sample_idx)
+    print('数据正负例分布：', 'pos:', len(by_label[0]), 'neg', len(by_label[1]))
     if shuffle:
-        random.shuffle(idx_neg)
-        random.shuffle(idx_pos)
-    fold0_x_test, fold1_x_test, fold2_x_test, fold3_x_test, fold4_x_test = [], [], [], [], []
-    fold0_x_train, fold1_x_train, fold2_x_train, fold3_x_train, fold4_x_train = [], [], [], [], []
-    fold0_x_val, fold1_x_val, fold2_x_val, fold3_x_val, fold4_x_val = [], [], [], [], []
-    leng1 = int(len(idx_pos) * test)
-    leng2 = int(len(idx_neg) * test)
-
-
-
-    fold0_x_test.extend(idx_pos[0:leng1])
-    fold0_x_test.extend(idx_neg[0:leng2])
-    temp_pos = idx_pos-idx_pos[0:leng1]
-    temp_neg = idx_neg-idx_neg[0:leng2]
-    leng3 = int(len(temp_pos) * val)
-    leng4 = int(len(temp_neg) * val)
-    fold0_x_val.extend(temp_pos[0:leng3])
-    fold0_x_val.extend(temp_neg[0:leng4])
-    fold0_x_train.extend(temp_pos[leng3:])
-    fold0_x_train.extend(temp_neg[leng4:])
-
-    fold1_x_test.extend(idx_pos[leng1:leng1*2])
-    fold1_x_test.extend(idx_neg[leng2:leng2*2])
-    temp_pos = idx_pos - idx_pos[leng1:leng1*2]
-    temp_neg = idx_neg - idx_neg[leng2:leng2*2]
-    leng3 = int(len(temp_pos) * val)
-    leng4 = int(len(temp_neg) * val)
-    fold1_x_val.extend(temp_pos[0:leng3])
-    fold1_x_val.extend(temp_neg[0:leng4])
-    fold1_x_train.extend(temp_pos[leng3:])
-    fold1_x_train.extend(temp_neg[leng4:])
-
-    fold2_x_test.extend(idx_pos[leng1*2:leng1*3])
-    fold2_x_test.extend(idx_neg[leng2*2:leng2*3])
-    temp_pos = idx_pos - idx_pos[leng1*2:leng1*3]
-    temp_neg = idx_neg - idx_neg[leng2*2:leng2*3]
-    leng3 = int(len(temp_pos) * val)
-    leng4 = int(len(temp_neg) * val)
-    fold2_x_val.extend(temp_pos[0:leng3])
-    fold2_x_val.extend(temp_neg[0:leng4])
-    fold2_x_train.extend(temp_pos[leng3:])
-    fold2_x_train.extend(temp_neg[leng4:])
-
-    fold3_x_test.extend(idx_pos[leng1*3:leng1*4])
-    fold3_x_test.extend(idx_neg[leng2*3:leng2*4])
-    temp_pos = idx_pos - idx_pos[leng1*3:leng1*4]
-    temp_neg = idx_neg - idx_neg[leng2*3:leng2*4]
-    leng3 = int(len(temp_pos) * val)
-    leng4 = int(len(temp_neg) * val)
-    fold3_x_val.extend(temp_pos[0:leng3])
-    fold3_x_val.extend(temp_neg[0:leng4])
-    fold3_x_train.extend(temp_pos[leng3:])
-    fold3_x_train.extend(temp_neg[leng4:])
-
-    fold4_x_test.extend(idx_pos[leng1*4:])
-    fold4_x_test.extend(idx_neg[leng2*4:])
-    temp_pos = idx_pos - idx_pos[leng1*4:]
-    temp_neg = idx_neg - idx_neg[leng2*4:]
-    leng3 = int(len(temp_pos) * val)
-    leng4 = int(len(temp_neg) * val)
-    fold4_x_val.extend(temp_pos[0:leng3])
-    fold4_x_val.extend(temp_neg[0:leng4])
-    fold4_x_train.extend(temp_pos[leng3:])
-    fold4_x_train.extend(temp_neg[leng4:])
-
-    fold0_test = list(fold0_x_test)
-    random.shuffle(fold0_test)
-    fold0_val = list(fold0_x_val)
-    random.shuffle(fold0_val)
-    fold0_train = list(fold0_x_train)
-    random.shuffle(fold0_train)
-
-    fold1_test = list(fold1_x_test)
-    random.shuffle(fold1_test)
-    fold1_val = list(fold1_x_val)
-    random.shuffle(fold1_val)
-    fold1_train = list(fold1_x_train)
-    random.shuffle(fold1_train)
-
-    fold2_test = list(fold2_x_test)
-    random.shuffle(fold2_test)
-    fold2_val = list(fold2_x_val)
-    random.shuffle(fold2_val)
-    fold2_train = list(fold2_x_train)
-    random.shuffle(fold2_train)
-
-    fold3_test = list(fold3_x_test)
-    random.shuffle(fold3_test)
-    fold3_val = list(fold3_x_val)
-    random.shuffle(fold3_val)
-    fold3_train = list(fold3_x_train)
-    random.shuffle(fold3_train)
-
-    fold4_test = list(fold4_x_test)
-    random.shuffle(fold4_test)
-    fold4_val = list(fold4_x_val)
-    random.shuffle(fold4_val)
-    fold4_train = list(fold4_x_train)
-    random.shuffle(fold4_train)
-
-    # print('val idx:',val_idx)
-    # print('train数据正负例分布：', 'pos:', len(train_idx_pos), 'neg', len(train_idx_neg))
-    # print('val数据正负例分布：', 'pos:', len(val_idx_pos), 'neg', len(val_idx_neg))
-    # print('test数据正负例分布：', 'pos:', len(test_idx_pos), 'neg', len(test_idx_neg))
-    return list(fold0_test),list(fold0_val), list(fold0_train), \
-           list(fold1_test),list(fold1_val), list(fold1_train), \
-           list(fold2_test),list(fold2_val), list(fold2_train), \
-           list(fold3_test),list(fold3_val), list(fold3_train), \
-           list(fold4_test),list(fold4_val), list(fold4_train)
-
+        for indices in by_label.values():
+            random.shuffle(indices)
+    test_folds = {
+        label: [part.tolist() for part in np.array_split(indices, 5)]
+        for label, indices in by_label.items()
+    }
+    folds = []
+    all_test = []
+    for fold_idx in range(5):
+        fold_test, fold_val, fold_train = [], [], []
+        for label, indices in by_label.items():
+            label_test = test_folds[label][fold_idx]
+            test_set = set(label_test)
+            remaining = [index for index in indices if index not in test_set]
+            val_count = int(round(val * len(indices)))
+            fold_test.extend(label_test)
+            fold_val.extend(remaining[:val_count])
+            fold_train.extend(remaining[val_count:])
+        random.shuffle(fold_test)
+        random.shuffle(fold_val)
+        random.shuffle(fold_train)
+        test_set, val_set, train_set = map(set, (fold_test, fold_val, fold_train))
+        assert not test_set & val_set
+        assert not test_set & train_set
+        assert not val_set & train_set
+        assert test_set | val_set | train_set == set(range(size))
+        all_test.extend(fold_test)
+        folds.extend((fold_test, fold_val, fold_train))
+    assert sorted(all_test) == list(range(size))
+    return tuple(folds)
 
 def sparse_to_tuple(sparse_mx):
     """Convert sparse matrix to tuple representation."""

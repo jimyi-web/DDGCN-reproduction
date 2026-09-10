@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "events": 5748,
+  "unique_prefix_graphs": 41353,
+  "all_events_covered": true,
+  "all_edge_endpoints_valid": true,
+  "all_deadlines_valid": true,
+  "future_annotation_perturbation_events": 5748,
+  "min_normalization_degree": 0.3068528194400546
+}

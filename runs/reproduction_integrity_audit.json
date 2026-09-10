@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-10T02:18:01.177813+00:00",
+  "training_folds": 25,
+  "checkpoints_readable_and_finite": 25,
+  "training_results": 25,
+  "training_predictions": 25,
+  "training_summaries": 2,
+  "reload_folds": 5,
+  "early_prediction_files": 65,
+  "early_windows": 13,
+  "events_per_window": 5748,
+  "summary_values_means_sample_std_recomputed": true,
+  "main_unchanged_since_reload": true,
+  "checkpoint_validation": "CPU deserialization, finite tensors, matching per-model fold schemas and best epoch; main hashes match previous independent inference reload",
+  "weibo_faithful_complete": false,
+  "weibo_blocker": "External entity linking / Probase resources unavailable; no approximation counted as faithful reproduction",
+  "folds": [
+    {
+      "model": "completed",
+      "fold": 0,
+      "checkpoint_sha256": "bc5ef943970147272dd23b59f290e9b5704b0eaee669e3ceb0f3524a86b889e8",
+      "best_epoch": 3,
+      "test_events": 1150
+    },
+    {
+      "model": "completed",
+      "fold": 1,
+      "checkpoint_sha256": "b1a4389a30adf5bb7a4c0ab425cf7cbf1c100dbb1e3d10ec53fa6e2ed44aa7f5",
+      "best_epoch": 4,
+      "test_events": 1150
+    },
+    {
+      "model": "completed",
+      "fold": 2,
+      "checkpoint_sha256": "1be16e5bdf22d28661e439cb3c3ec0c822a0ef6c45083883fae0f86ea5e992f2",
+      "best_epoch": 5,
+      "test_events": 1150
+    },
+    {
+      "model": "completed",
+      "fold": 3,
+      "checkpoint_sha256": "b5808cabe9edfa943292b693b614c921a061d2215aaba4046a1e7ccb401f334a",
+      "best_epoch": 5,
+      "test_events": 1150
+    },
+    {
+      "model": "completed",
+      "fold": 4,
+      "checkpoint_sha256": "b6da850d23bacf2c8299d27937cb73aaa78c140fbb4ba799d94892b38de6a560",
+      "best_epoch": 4,
+      "test_events": 1148
+    },
+    {
+      "model": "wotf",
+      "fold": 0,
+      "checkpoint_sha256": "8717e2cc35ff091cb4637b2cc151737f4c9597a32d86ba6ac206da1a1f69848d",
+      "best_epoch": 4,
+      "test_events": 1150
+    },
+    {
+      "model": "wotf",
+      "fold": 1,
+      "checkpoint_sha256": "bdb6b06f18077be63cd34ecf8a8a8823ddf070c2a38c1f3b12167e36035f3d11",
+      "best_epoch": 5,
+      "test_events": 1150
+    },
+    {
+      "model": "wotf",
+      "fold": 2,
+      "checkpoint_sha256": "ebb703acdb8ea51e025cccaa744f98305e0baccd116e0898debaea671b5ecbea",
+      "best_epoch": 4,
+      "test_events": 1150
+    },
+    {
+      "model": "wotf",
+      "fold": 3,
+      "checkpoint_sha256": "32a3efb8f770667480adff6cd5e486a38db19525397e77497c43ae870eeed5a6",
+      "best_epoch": 2,
+      "test_events": 1150
+    },
+    {
+      "model": "wotf",
+      "fold": 4,
+      "checkpoint_sha256": "de0a16d52a811fb39f86506f48eb419184415c45b1ee120b5f3d2cf12ed7bcad",
+      "best_epoch": 4,
+      "test_events": 1148
+    },
+    {
+      "model": "static",
+      "fold": 0,
+      "checkpoint_sha256": "1f2e16d4ebebe60bfef9a4de0089ca49d461640f3ffa73b69107357cc4e571fb",
+      "best_epoch": 4,
+      "test_events": 1150
+    },
+    {
+      "model": "static",
+      "fold": 1,
+      "checkpoint_sha256": "f07244df379d640a726ceddd50cebf67c8c3814e760dd5230fad8eb2055625f5",
+      "best_epoch": 2,
+      "test_events": 1150
+    },
+    {
+      "model": "static",
+      "fold": 2,
+      "checkpoint_sha256": "ec5dcffdeb297791b0c9c00154e1dc8787b3c723af53bb9cb39bcf9600473428",
+      "best_epoch": 2,
+      "test_events": 1150
+    },
+    {
+      "model": "static",
+      "fold": 3,
+      "checkpoint_sha256": "7db5d8330989cc1767fa609883308ca29364d802c3208abd8dc800be0acb101d",
+      "best_epoch": 5,
+      "test_events": 1150
+    },
+    {
+      "model": "static",
+      "fold": 4,
+      "checkpoint_sha256": "077641424400dcd2f40885fe65192f42bcfbdc2eda639338f5460888ffa1a479",
+      "best_epoch": 5,
+      "test_events": 1148
+    },
+    {
+      "model": "propagation",
+      "fold": 0,
+      "checkpoint_sha256": "c2a1241d55478d3682cbc17dc7258197d4d87191cf2ee3a11e3c87421c6491d8",
+      "best_epoch": 5,
+      "test_events": 1150
+    },
+    {
+      "model": "propagation",
+      "fold": 1,
+      "checkpoint_sha256": "3d805132912bb854057688f8a1c17171cf60c89860b3303e96d49804eecd2e7c",
+      "best_epoch": 4,
+      "test_events": 1150
+    },
+    {
+      "model": "propagation",
+      "fold": 2,
+      "checkpoint_sha256": "0a7a23ca8c081a340d4e85cc4de1a2b7c4c84886c16b26bbed2076252b55af74",
+      "best_epoch": 3,
+      "test_events": 1150
+    },
+    {
+      "model": "propagation",
+      "fold": 3,
+      "checkpoint_sha256": "461171f036fe6d01e690f50c004d4cf3d43b00a2cff5238caec14ddfa8a8022b",
+      "best_epoch": 2,
+      "test_events": 1150
+    },
+    {
+      "model": "propagation",
+      "fold": 4,
+      "checkpoint_sha256": "9a17c6e5ef51c04afaac2ffbbf52dcf105641563883fed7188185e5bbcf0361e",
+      "best_epoch": 2,
+      "test_events": 1148
+    },
+    {
+      "model": "knowledge",
+      "fold": 0,
+      "checkpoint_sha256": "2980cb1c32642094ff944f23ec36a172903c9398cc52aa8ad623eb6d9aeb9320",
+      "best_epoch": 5,
+      "test_events": 1150
+    },
+    {
+      "model": "knowledge",
+      "fold": 1,
+      "checkpoint_sha256": "e59b1c239604316b265e2de9bea86813b493a55da5cf279a38bfd936c16c112b",
+      "best_epoch": 2,
+      "test_events": 1150
+    },
+    {
+      "model": "knowledge",
+      "fold": 2,
+      "checkpoint_sha256": "f8cba4b13a5d8cc476c69080353e3042ae6f7dcb7e2c67f27ffaae3d6396936f",
+      "best_epoch": 5,
+      "test_events": 1150
+    },
+    {
+      "model": "knowledge",
+      "fold": 3,
+      "checkpoint_sha256": "07ca3c350194ac2b0cc52c6fe4db34c5677227e2049eb21f143e99b470b50790",
+      "best_epoch": 4,
+      "test_events": 1150
+    },
+    {
+      "model": "knowledge",
+      "fold": 4,
+      "checkpoint_sha256": "93d149e7c99d823e390fc487a909adaef41d2aa282c08fc8d286d299dfe509d1",
+      "best_epoch": 2,
+      "test_events": 1148
+    }
+  ],
+  "input_and_checkpoint_sha256": {
+    "/root/projects/DDGCN/data/pheme/node2idx_mid.txt": "3ca4dd5b7f33ed5a298367c21689daf00904a80bad7ede808ed4364bf868b05b",
+    "/root/projects/DDGCN/data/pheme/mid2text.txt": "b307f8de77284713009f5bc955edebc21d31b7dc686780d6d3a22a729e05de04",
+    "/root/projects/DDGCN/data/pheme/pheme_temporal_data/propagation_node_idx.npy": "5a901a626d22c46fef1f16d20917be1df7da748610ffb9c0d8ec2857dab5b1b4",
+    "/root/projects/DDGCN/data/pheme/pheme_temporal_data/propagation_node.npy": "c0dadaae4ae02a0dc1d38564c6ff105b872b0da95d19d1163964906aa4a1f8b5",
+    "/root/projects/DDGCN/data/pheme/pheme_temporal_data/knowledge_node_idx.npy": "74fbb839588c662faa8579bbb090ea411c4417652da4919e254e77d721ad4254",
+    "/root/projects/DDGCN/data/pheme/pheme_temporal_data/knowledge_node.npy": "0109192a5e4cb657c20c41bf129a3d8be43b89b49ff7a498678c388ddaedd8f8",
+    "/root/projects/DDGCN/data/pheme/pheme_temporal_data/label.npy": "4b0eed60f0e5a8b4761357a1dd09a27fe6fbb02078e4d64744fda8fd0e95a4cc",
+    "/root/projects/DDGCN/data/pheme/pheme_temporal_data/propagation_root_index.npy": "55d8dcf98e334b3a34e4c9f79de75ca61b47e21a9a345715e1f2a74a2cd4b77d",
+    "/root/projects/DDGCN/bert-base-uncased/config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "/root/projects/DDGCN/bert-base-uncased/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "/root/projects/DDGCN/bert-base-uncased/pytorch_model.bin": "097417381d6c7230bd9e3557456d726de6e83245ec8b24f529f60198a67b203a",
+    "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_0/best.pt": "bc5ef943970147272dd23b59f290e9b5704b0eaee669e3ceb0f3524a86b889e8",
+    "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_1/best.pt": "b1a4389a30adf5bb7a4c0ab425cf7cbf1c100dbb1e3d10ec53fa6e2ed44aa7f5",
+    "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_2/best.pt": "1be16e5bdf22d28661e439cb3c3ec0c822a0ef6c45083883fae0f86ea5e992f2",
+    "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_3/best.pt": "b5808cabe9edfa943292b693b614c921a061d2215aaba4046a1e7ccb401f334a",
+    "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_4/best.pt": "b6da850d23bacf2c8299d27937cb73aaa78c140fbb4ba799d94892b38de6a560",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_0/best.pt": "8717e2cc35ff091cb4637b2cc151737f4c9597a32d86ba6ac206da1a1f69848d",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_1/best.pt": "bdb6b06f18077be63cd34ecf8a8a8823ddf070c2a38c1f3b12167e36035f3d11",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_2/best.pt": "ebb703acdb8ea51e025cccaa744f98305e0baccd116e0898debaea671b5ecbea",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_3/best.pt": "32a3efb8f770667480adff6cd5e486a38db19525397e77497c43ae870eeed5a6",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_4/best.pt": "de0a16d52a811fb39f86506f48eb419184415c45b1ee120b5f3d2cf12ed7bcad",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_0/best.pt": "1f2e16d4ebebe60bfef9a4de0089ca49d461640f3ffa73b69107357cc4e571fb",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_1/best.pt": "f07244df379d640a726ceddd50cebf67c8c3814e760dd5230fad8eb2055625f5",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_2/best.pt": "ec5dcffdeb297791b0c9c00154e1dc8787b3c723af53bb9cb39bcf9600473428",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_3/best.pt": "7db5d8330989cc1767fa609883308ca29364d802c3208abd8dc800be0acb101d",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_4/best.pt": "077641424400dcd2f40885fe65192f42bcfbdc2eda639338f5460888ffa1a479",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_0/best.pt": "c2a1241d55478d3682cbc17dc7258197d4d87191cf2ee3a11e3c87421c6491d8",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_1/best.pt": "3d805132912bb854057688f8a1c17171cf60c89860b3303e96d49804eecd2e7c",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_2/best.pt": "0a7a23ca8c081a340d4e85cc4de1a2b7c4c84886c16b26bbed2076252b55af74",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_3/best.pt": "461171f036fe6d01e690f50c004d4cf3d43b00a2cff5238caec14ddfa8a8022b",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_4/best.pt": "9a17c6e5ef51c04afaac2ffbbf52dcf105641563883fed7188185e5bbcf0361e",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_0/best.pt": "2980cb1c32642094ff944f23ec36a172903c9398cc52aa8ad623eb6d9aeb9320",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_1/best.pt": "e59b1c239604316b265e2de9bea86813b493a55da5cf279a38bfd936c16c112b",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_2/best.pt": "f8cba4b13a5d8cc476c69080353e3042ae6f7dcb7e2c67f27ffaae3d6396936f",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_3/best.pt": "07ca3c350194ac2b0cc52c6fe4db34c5677227e2049eb21f143e99b470b50790",
+    "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_4/best.pt": "93d149e7c99d823e390fc487a909adaef41d2aa282c08fc8d286d299dfe509d1"
+  }
+}

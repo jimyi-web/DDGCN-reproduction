@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "note": "source-only inference smoke test; not the full early result",
+  "events": 16,
+  "all_outputs_finite": true,
+  "bert_cache_cold_and_warm_match": true,
+  "metrics": {
+    "loss": 0.019280679523944855,
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "legacy_f1": 1.0,
+    "per_class_precision": [
+      1.0,
+      1.0
+    ],
+    "per_class_recall": [
+      1.0,
+      1.0
+    ],
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "support": [
+      15,
+      1
+    ]
+  }
+}

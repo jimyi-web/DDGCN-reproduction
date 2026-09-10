@@ -1,0 +1,145 @@
+diff --git a/model/data.py b/model/data.py
+index 7c10a1c..708ded6 100644
+--- a/model/data.py
++++ b/model/data.py
+@@ -1,14 +1,14 @@
+ import numpy as np
+ import pickle as pkl
+ import scipy.sparse as sp
+-from scipy.sparse.linalg.eigen.arpack import eigsh
++from scipy.sparse.linalg import eigsh
+ import sys, os
+ import torch
+ import re
+ import string
+ import torch
+ import torch.nn.functional as F
+-from path import *
++from path_zh import *
+ import csv
+ from config import *
+ import random
+diff --git a/model/data_process.py b/model/data_process.py
+index c993077..bf6864a 100644
+--- a/model/data_process.py
++++ b/model/data_process.py
+@@ -1,4 +1,4 @@
+-from scipy.sparse.linalg.eigen.arpack import eigsh
++from scipy.sparse.linalg import eigsh
+ import sys, os
+ import torch
+ import re
+@@ -184,10 +184,10 @@ def remove_single_nodepost(p_idx, p_node, k_idx, k_node, y, p_root_idx):
+             k_node_new.append(k_node[i])
+             y_new.append(y[i])
+             p_root_idx_new.append(p_root_idx[i])
+-    p_idx_new = np.array(p_idx_new)
+-    p_node_new = np.array(p_node_new)
+-    k_idx_new = np.array(k_idx_new)
+-    k_node_new = np.array(k_node_new)
++    p_idx_new = np.array(p_idx_new, dtype=object)
++    p_node_new = np.array(p_node_new, dtype=object)
++    k_idx_new = np.array(k_idx_new, dtype=object)
++    k_node_new = np.array(k_node_new, dtype=object)
+     y_new = np.array(y_new)
+     p_root_idx_new = np.array(p_root_idx_new)
+     return p_idx_new,p_node_new,k_idx_new,k_node_new,y_new, p_root_idx_new
+@@ -1438,6 +1438,14 @@ def loadData_bert(x_propagation_idx,x_propagation_node_indices, x_propagation_no
+     return data_list
+ 
+ 
++class DualGraphData(Data):
++    """Batch each graph using its own node count."""
++    def __inc__(self, key, value, *args, **kwargs):
++        if key.startswith('x_knowledge_node_indices_') and key.endswith('_edge_index'):
++            return int(self.x_knowledge_node_num.item())
++        return super().__inc__(key, value, *args, **kwargs)
++
++
+ class GraphDataset_bert(Dataset):
+     def __init__(self, x_propagation_idx,x_propagation_node_indices,x_propagation_node_values,\
+                  x_knowledge_idx,x_knowledge_node_indices,x_knowledge_node_values,target, root_idx):
+@@ -1529,7 +1537,7 @@ class GraphDataset_bert(Dataset):
+         # print('y:', y, y.size())
+ 
+ 
+-        return Data(
++        return DualGraphData(
+                     x = torch.tensor(x_propagation_node_idx,dtype=torch.long),\
+                     edge_index = torch.LongTensor(x_propagation_node_indices_0), \
+                     edge_values=torch.tensor(x_propagation_node_values_0, dtype=torch.float), \
+diff --git a/model/path_zh.py b/model/path_zh.py
+index a5e754c..ecc6df9 100644
+--- a/model/path_zh.py
++++ b/model/path_zh.py
+@@ -1,6 +1,8 @@
+ import os
+ import sys
+ 
++PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
++
+ 
+ 
+ # ============  model ==========
+@@ -10,7 +12,7 @@ import sys
+ # ============ data ============
+ class path_Set():
+     def __init__(self,dataset):
+-        self.path_data_dir = os.path.join("/home/sunmengzhu2019/dual_dynamic_graph/dual_dynamic_graph", "data/{}".format(dataset))
++        self.path_data_dir = os.path.join(PROJECT_ROOT, "data/{}".format(dataset))
+ 
+         # vocab
+         # self.path_entity_concept_2id = os.path.join(self.path_data_dir, "entity_concept_2id.csv")
+@@ -32,11 +34,11 @@ class path_Set():
+         self.path_root_idx = os.path.join(self.path_data_dir, "{}_temporal_data/propagation_root_index.npy".format(dataset))
+ 
+         #trained_model
+-        self.path_saved_model = "model_saved/"
++        self.path_saved_model = os.path.join(PROJECT_ROOT, "model", "model_saved")
+ 
+ class path_Set_BERT():
+     def __init__(self,dataset):
+-        self.path_data_dir = os.path.join("/home/sunmengzhu2019/dual_dynamic_graph/dual_dynamic_graph", "data/{}".format(dataset))
++        self.path_data_dir = os.path.join(PROJECT_ROOT, "data/{}".format(dataset))
+ 
+         # vocab
+         # self.path_entity_concept_2id = os.path.join(self.path_data_dir, "entity_concept_2id.csv")
+@@ -58,19 +60,19 @@ class path_Set_BERT():
+         self.path_root_idx = os.path.join(self.path_data_dir, "{}_temporal_data/propagation_root_index.npy".format(dataset))
+ 
+         #trained_model
+-        self.path_saved_model = "model_saved/"
++        self.path_saved_model = os.path.join(PROJECT_ROOT, "model", "model_saved")
+         #BERT_PATH
+         if dataset == 'weibo':
+-            self.path_bert = '../bert-base-chinese/'
++            self.path_bert = os.path.join(PROJECT_ROOT, 'bert-base-chinese')
+             self.VOCAB = 'vocab.txt'
+         elif dataset == 'pheme':
+-            self.path_bert = '../bert-base-uncased/'
++            self.path_bert = os.path.join(PROJECT_ROOT, 'bert-base-uncased')
+             self.VOCAB = 'vocab.txt'
+ 
+ class path_Set_early():
+     def __init__(self,dataset,time_count):
+ 
+-        self.path_data_dir = os.path.join("/home/sunmengzhu2019/dual_dynamic_graph/dual_dynamic_graph", "data/{}".format(dataset))
++        self.path_data_dir = os.path.join(PROJECT_ROOT, "data/{}".format(dataset))
+ 
+         # vocab
+         # self.path_entity_concept_2id = os.path.join(self.path_data_dir, "entity_concept_2id.csv")
+@@ -132,11 +134,11 @@ class path_Set_early():
+                                                                "{}_temporal_data_time{}_count{}/propagation_root_index_test.npy".format(
+                                                                    dataset, t_c[0], t_c[1])))
+         #trained_model
+-        self.path_saved_model = "model_saved/"
++        self.path_saved_model = os.path.join(PROJECT_ROOT, "model", "model_saved")
+         #BERT_PATH
+         if dataset == 'weibo':
+-            self.path_bert = '../bert-base-chinese/'
++            self.path_bert = os.path.join(PROJECT_ROOT, 'bert-base-chinese')
+             self.VOCAB = 'vocab.txt'
+         elif dataset == 'pheme':
+-            self.path_bert = '../bert-base-uncased/'
++            self.path_bert = os.path.join(PROJECT_ROOT, 'bert-base-uncased')
+             self.VOCAB = 'vocab.txt'

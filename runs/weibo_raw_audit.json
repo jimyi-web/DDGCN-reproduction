@@ -1,0 +1,39 @@
+{
+  "events": 4664,
+  "source_label_counts": {
+    "0": 2351,
+    "1": 2313
+  },
+  "posts": 3805656,
+  "min_posts": 10,
+  "max_posts": 59318,
+  "author_excluded_ids": [
+    "3495745049431351",
+    "3843025795130981",
+    "3852804358130490",
+    "3852846782594165",
+    "3853172374694439",
+    "3925816377308372",
+    "3926120686649225"
+  ],
+  "after_author_exclusions": 4657,
+  "source_label_counts_after_exclusions": {
+    "0": 2345,
+    "1": 2312
+  },
+  "original_code_inverted_label_counts_after_exclusions": {
+    "1": 2345,
+    "0": 2312
+  },
+  "structural_anomalies": [
+    {
+      "event_id": "3495745049431351",
+      "posts": 31,
+      "roots": 1,
+      "missing_parent_edges": 30,
+      "duplicate_ids": 0,
+      "excluded_by_author": true
+    }
+  ],
+  "warning": "Label semantics must follow dataset documentation; verified is a user attribute."
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="知识工场源于复旦大学GDM实验室，负责人肖仰华">
+    <meta name="keywords" content="知识工场 知识图谱  复旦大学 肖仰华 阳德青 徐波 梁家卿 谢晨昊 Knowledge Works Knowledge Graph">
+    <meta name="author" content="">
+    <link rel="icon" href="/resources/image/favicon.ico">
+
+    <title>APIs</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/resources/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/resources/css/dashboard.css" rel="stylesheet">
+    
+    
+    <script src="/resources/assets/js/ie-emulation-modes-warning.js"></script>
+    
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span>
+            </button>
+            
+    <a class="navbar-brand" href="#">APIs</a>
+
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <!--
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li class="dropdown active">
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-expanded="false"> People <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/people/researchers/">Research Scientists</a></li>
+                        <li><a href="/people/students/">Student</a></li>
+                    </ul>
+                </li>
+                <li><a href="/statistics/basic/">Statistics</a></li>
+                <li><a href="/recruitment/">Recruitment</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+            -->
+            <ul class="visible-xs  nav navbar-nav navbar-right">
+                
+    <li class=""><a href="/apis/intro/">Introduction</a></li>
+    <li class=""><a href="/apis/cndbpedia/">CN-DBpedia</a></li>
+  <!--  <li class=""><a href="/apis/probaseplus/">Probaseplus</a></li>-->
+   <!-- <li class=""><a href="/apis/shorttext/">Shorttext</a></li>-->
+    <li class=""><a href="/apis/supervcode/">Super V Code</a></li>
+    <li class=""><a href="/apis/qa/">qa</a></li>
+    <li><a href="../../../">Knowledge Works</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                
+    <li class=""><a href="/apis/intro/">Introduction</a></li>
+    <li class=""><a href="/apis/cndbpedia/">CN-DBpedia</a></li>
+    <!--<li class=""><a href="/apis/probaseplus/">Probaseplus</a></li>-->
+    <li class="active"><a href="/apis/cnprobase/">CN-Probase</a></li>
+	
+	<!--<li class=""><a href="/apis/shorttext/">Shorttext</a></li>-->
+    <li class=""><a href="/apis/supervcode/">Super V Code</a></li>
+    <li class=""><a href="/apis/fint5/">预训练大模型</a></li>
+    <li class=""><a href="/apis/qa/">Entity-Understanding</a>
+    </li>
+    <li><a href="../../../">Knowledge Works</a></li>
+    <footer class="sidebar-footer">
+                Copy Right <span class="fontArial">©</span>
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                KW Lab <br> Fudan University
+            </footer>
+
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            
+<div class="page-header" id="lecturer">
+	<h1 style="">CN-Probase API接口</h1>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>Introduction</h4>
+	</div>
+	<div class="panel-body">
+	CN-Probase是由复旦大学知识工场实验室研发并维护的大规模中文概念图谱，包含约1700万实体、27万概念和3300万isa关系。
+	isa关系的准确率在95%以上，是目前规模最大的开放领域中文概念图谱和概念分类体系。
+	</br>
+	相比较于其他概念图谱，CN-Probase具有两个显著优点。
+	</br>
+	一、规模巨大，基本涵盖常见实体和概念。二、严格按照实体进行组织，有利于实体的精准理解。
+	</br>
+	目前无APIKEY授权的API调用仅能访问概念的前50个实体，且有API调用总量限制，如需大规模使用请联系info.knowledgeworks@gmail.com索取APIKEY。
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>api/mention2entity</h4>
+	</div>
+	<div class="panel-body">
+		<p>输入实体名称(mention)，返回对应实体(entity)的列表，json格式。</p>
+		<h4>请求参数</h4>
+		<p>q：实体名称(mention)；必填项</p>
+		<p>apikey：开发者的访问密钥；可选项（注：不加访问密钥会存在访问限制）</p>
+		<h4>返回字段</h4>
+		<p>status：本次API访问状态，如果成功返回“ok”，如果失败返回“fail”</p>
+		<p>ret： 返回entity name list</p>
+		
+		<h4>URL</h4>
+		<p>http://shuyantech.com/api/cnprobase/ment2ent?q=**</p>
+		<p>http://shuyantech.com/api/cnprobase/ment2ent?q=**&apikey=**</p>
+
+		<h4>Example</h4>
+		<a href='http://shuyantech.com/api/cnprobase/ment2ent?q=刘德华' target="view_window">
+			http://shuyantech.com/api/cnprobase/ment2ent?q=刘德华
+		</a>	
+			
+	</div>
+</div>
+
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>api/getConcept</h4>
+	</div>
+	<div class="panel-body">
+		<p>输入实体，返回实体对应概念列表，json格式。</p>
+		<h4>请求参数</h4>
+		<p>q：实体名称(entity)；必填项</p>
+		<p>apikey：开发者的访问密钥；可选项（注：不加访问密钥会存在访问限制）</p>
+		<h4>返回字段</h4>
+		<p>status：本次API访问状态，如果成功返回“ok”，如果失败返回“fail”</p>
+		<p>count：概念数量</p>
+		<p>pagesize：每次请求最多返回的概念数量</p>
+		<p>ret： 返回concept list，list中每个元素的格式[概念, 权重]</p>
+		<h4>URL</h4>
+		<p>http://shuyantech.com/api/cnprobase/concept?q=**</p>
+		<p>http://shuyantech.com/api/cnprobase/concept?q=**&apikey=**</p>
+		<h4>Example</h4>
+		<a href='http://shuyantech.com/api/cnprobase/concept?q=刘德华' target="view_window">
+			http://shuyantech.com/api/cnprobase/concept?q=刘德华
+		</a>	
+			
+	</div>
+</div>
+
+<!--
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>api/getEntity</h4>
+	</div>
+	<div class="panel-body">
+		<p>输入概念，返回概念对应实体列表，json格式。默认返回前50个。</p>
+		<h4>请求参数</h4>
+		<p>q：概念(concept)；必填项</p>
+		<p>start：控制翻页；可选项</p>
+		<p>apikey：开发者的访问密钥；可选项（注：不加访问密钥会存在访问限制）</p>
+		<h4>返回字段</h4>
+		<p>status：本次API访问状态，如果成功返回“ok”，如果失败返回“fail”</p>
+		<p>count：实体数量</p>
+		<p>pagesize：每次请求最多返回的实体数量</p>
+		<p>ret： 返回entity list，list中每个元素的格式[实体, 权重]</p>
+		<h4>URL</h4>
+		<p>http://shuyantech.com/api/cnprobase/entity?q=**</p>
+		<p>http://shuyantech.com/api/cnprobase/entity?q=**start=**&apikey=**</p>
+
+		<h4>Example</h4>
+		<a href='http://shuyantech.com/api/cnprobase/entity?q=男演员' target="view_window">
+			http://shuyantech.com/api/cnprobase/entity?q=男演员
+		</a><br>
+		
+	</div>
+</div>
+-->
+
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>Complete Example</h4>
+	</div>
+	<div class="panel-body">
+		<h4>Step1</h4>
+		<p>输入实体名称(mention)，查看它对应实体(entity)的列表（即调用mention2entity API）。</p>
+		<a href='http://shuyantech.com/api/cnprobase/ment2ent?q=刘德华' target="view_window">
+			http://shuyantech.com/api/cnprobase/ment2ent?q=刘德华
+		</a></br>
+		<h4>Step2</h4>
+		<p>从Step1中的实体列表中选择一个合适的实体，查看它的上位词（即调用getConcept API）。</p>
+		<a href='http://shuyantech.com/api/cnprobase/concept?q=刘德华（中国香港男演员、歌手、词作人）' target="view_window">
+			http://shuyantech.com/api/cnprobase/concept?q=刘德华（中国香港男演员、歌手、词作人）
+		</a></br>
+	</div>
+</div>
+<br>
+<br>
+<br>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="/resources/js/jquery.min.js"></script>
+    <script src="/resources/js/jquery.mobile.custom.min.js"></script>
+    <script src="/resources/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/resources/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+

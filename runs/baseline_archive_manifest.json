@@ -1,0 +1,917 @@
+[
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_0/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_0/epochs.jsonl",
+    "sha256": "28ca4d45bff9043bfe8a8d0356975a7b90491e76d8e33019ca003b02a84768fd"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_0/result.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_0/result.json",
+    "sha256": "a9d53af215303b18e5db6fa75b824ead87c6bce8d20f082cf3b3b89b644b916e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_0/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_0/test_predictions.json",
+    "sha256": "96879689cc7ae358d64180b01bae6abfd9d2a775a61051aecafef8d162dfc012"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_1/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_1/epochs.jsonl",
+    "sha256": "4a4607f59aa4280544a0085eb89293f23bfc3edd6621eb75dab518cb2c970e20"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_1/result.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_1/result.json",
+    "sha256": "9bd7bb7b28f986faa2ace0c6c2b7f8c0d84b174dd12291f50e12d8a0dd37b8ef"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_1/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_1/test_predictions.json",
+    "sha256": "97c93c7b63e9a13bca4d745947d6f0986ec0a399d89063ea931c1e985bde5a4f"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_2/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_2/epochs.jsonl",
+    "sha256": "f681413c5f0825edcdbee79729c34b915878eb692fb2c66f3b4464b6b8d55020"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_2/result.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_2/result.json",
+    "sha256": "d889225018371ebdc6140bb1ed6914f92a2228a1ec17ce2edb7be7b1904bf3a6"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_2/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_2/test_predictions.json",
+    "sha256": "a7851357eee4d2b81763887ccf1968e9ff2a2d6659451dba8aadfd6d58a86420"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_3/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_3/epochs.jsonl",
+    "sha256": "b9a42eb4e3487dafba7f8bb0a57eaf6766f83e88ba89151a116449b8ce64e225"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_3/result.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_3/result.json",
+    "sha256": "67c668d74a10c65b04d191bcfc1676d828994ece20e9acdacc58dff1d5030128"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_3/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_3/test_predictions.json",
+    "sha256": "1052eb8669f32b8cc1a82b9243f5739a09c104d9e6a089dbfba6f5b9bc3d21c2"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_4/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_4/epochs.jsonl",
+    "sha256": "bc39ce106c375dedba8e57a60d2f18a6aeaa3fc0e83c02ad2a742c62b0b7e157"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_4/result.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_4/result.json",
+    "sha256": "094bcc5fb6bec3398a7469d6d5eb8be69f3bbb1d96b05ab8e80aa9be7dcf73ae"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/completed/fold_4/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/completed/fold_4/test_predictions.json",
+    "sha256": "af5497d493340de112618f20d1ced408b9c77f77c65eee5a3bd490ff99facfb5"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/config.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/config.json",
+    "sha256": "ac399971060b619bc91074c60d2439afa345780e0f1f515cb457f23bdf71d43c"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/input_manifest.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/input_manifest.json",
+    "sha256": "7bb91f4aa5a8dd0173c68cc0d79378f2dbf2c7cc6901c0632eee8adf3a3c2792"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/requirements.freeze.txt",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/requirements.freeze.txt",
+    "sha256": "79a26a294a69c3bed6ae462db4dbfd65cc68e9abf185be79b444b1430be69508"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/config.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/config.py",
+    "sha256": "df5805a83d7c218cd1132c8514741fed9f294402040895982f361b720c93ce5e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/data.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/data.py",
+    "sha256": "8b82611147eac9bdd11b75e338f86dd58a2c94528fdb54683770e6dbf444e327"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/data_process.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/data_process.py",
+    "sha256": "083dd04586d0aad41ce27d069d60bfee9dc38acbfab23c348b7745994c446716"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/layers.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/layers.py",
+    "sha256": "87571c40128865a291c7715266dc1cb8e87dc5e9090c310b3e2d26de5b2db872"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/models.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/models.py",
+    "sha256": "8432d18f25798f0697562b46ecf45fe886fba8babd8f7ff6a2282af441e77bc2"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/path_zh.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/path_zh.py",
+    "sha256": "eeb2dd368f9420966a16771d0a5e563a3d156b9f64c5466435c441a589b1f947"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/run_baseline.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/run_baseline.py",
+    "sha256": "d764febb0132cbff4c8b34fe2a3b088421216f0f1aec743add193dc9d44ff5ae"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/run_paper.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/run_paper.py",
+    "sha256": "2c51bb89478965d05353c113cc4aa44a1807767922b5953c0f6e97bfde60416b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/train_dynamic.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/train_dynamic.py",
+    "sha256": "e7beb785765c6ddf1ce9673e2cafeae75cea264113133c2be014fc981ef1291b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/source/util.py",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/source/util.py",
+    "sha256": "3c2d0f5c2d09b6d4b86dbe6f45dfd915dbb59904873d142ff563d10ee0490a84"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/splits.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/splits.json",
+    "sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed/summary.json",
+    "archive": "runs/baseline_artifacts/pheme_cv_checkpointed/summary.json",
+    "sha256": "e0140e58ea6839da8a79333c5e5a268d3b28de9ed7ee713160ff9cf1eb48517e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/config.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/config.json",
+    "sha256": "04e7fae0e84da447c95358eab1b8410770f26b089a6eaa02f86849469ab75aa9"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/input_manifest.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/input_manifest.json",
+    "sha256": "7bb91f4aa5a8dd0173c68cc0d79378f2dbf2c7cc6901c0632eee8adf3a3c2792"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_0/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_0/epochs.jsonl",
+    "sha256": "50eb568142abb1aba9f05066bc2ebf9fcb69c4351ef06a1edd5d44c34cd382fe"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_0/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_0/result.json",
+    "sha256": "982905fe147f204e4c9eeb13aba808301d86b9d468e7556e4bd33445e890070d"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_0/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_0/test_predictions.json",
+    "sha256": "97fb9ae3a99218017fcc251f6f00d834e5cc2dfdfe71126ee8031a30715e4f86"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_1/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_1/epochs.jsonl",
+    "sha256": "549fd4c0fea26f17c593c5324d11e55a0cd5f7f5557c8a29caa9d11d0a91e550"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_1/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_1/result.json",
+    "sha256": "2b9bfd6054385ed5d9ca7465e7cb1ae565cb3660254d383bf105152f60fdc36b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_1/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_1/test_predictions.json",
+    "sha256": "18fe036ea6c9fcf6f3da092c910fa587152fa385a834530d803e93d72cb57d08"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_2/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_2/epochs.jsonl",
+    "sha256": "9f2c6450449e5b4916a074805e58c2a583d62ea69d7e8f2b4407b97fa76a05a4"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_2/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_2/result.json",
+    "sha256": "85a712047be6dcad73bdb5cd695ae9bffa795cc8e14d0b66a8c97cf033f15b65"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_2/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_2/test_predictions.json",
+    "sha256": "68815fb5e21ea2b20f18f65f05bc441949b9fec0f0a87ee9e1861149a9ad4a34"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_3/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_3/epochs.jsonl",
+    "sha256": "f0d61123f2ce380117c8b3af7d970d1581247a189aad54ea06575106df5bb500"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_3/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_3/result.json",
+    "sha256": "b666970193368e24e104235acba9437457745e59771706da366684e00a69c225"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_3/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_3/test_predictions.json",
+    "sha256": "45de98864c2cb4433a1e01d6f27d674be8c218a08df7f8aa2c400ba5b7dc51a8"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_4/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_4/epochs.jsonl",
+    "sha256": "0a9c6119c550c026c8adbb7f5b193fdd3b8eedc072cae6062506943b02aa3c70"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_4/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_4/result.json",
+    "sha256": "7bea9bf5bf48054eb8f0553176a04d3e3db4adc68e6568129b53fb53e9897398"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/knowledge/fold_4/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/knowledge/fold_4/test_predictions.json",
+    "sha256": "cc9d9f967031fba2b546fa96b86761aaea8fbcfef7e8ba3e95f009752f4ded39"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_0/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_0/epochs.jsonl",
+    "sha256": "48ad4beb2ba9955f981e21dbcae67c9e10774c837a7aa612f2c2aa4e0a8072b3"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_0/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_0/result.json",
+    "sha256": "5ec770fcba73d34749f5319aa228c2a01904198d6417042d02810af56a87b906"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_0/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_0/test_predictions.json",
+    "sha256": "8d9501532842be4b8587c6b5e0dc7f9a3ac09da740c96f68863dc2c5135e8c5e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_1/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_1/epochs.jsonl",
+    "sha256": "59cdeb1889b18fd04840217e8860a17bb9b2b280b0dc8be28f297f35cef1d47b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_1/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_1/result.json",
+    "sha256": "33c3c6b4b8a6df43f03b106b79c7e3ca27247c3e92ba0ecfc9c3279b35ce82e1"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_1/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_1/test_predictions.json",
+    "sha256": "c1c94cd13661d2681943492ea5719faec4d03d12ec98d0f9680f64cdfa9b1586"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_2/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_2/epochs.jsonl",
+    "sha256": "1cc143a33916e3fa942595ee67e7516f8b50f3b35842290ddf89fe39fdcddf5c"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_2/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_2/result.json",
+    "sha256": "f8029f866b960320a570d03246046bb1d81f16720a7a93cf038fcf33a7b24c50"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_2/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_2/test_predictions.json",
+    "sha256": "78a9512c0d9e39bd9596b552e029d408c828e0c1105fb897d88f434ed39d201d"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_3/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_3/epochs.jsonl",
+    "sha256": "721675019b04416ab1e1a520b6bcc464e6f528a06ef61a07c8321716ec8e010c"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_3/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_3/result.json",
+    "sha256": "2be0d0c987f986b883a020ed7e1d1610202fd39e395474535376ab138eb70071"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_3/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_3/test_predictions.json",
+    "sha256": "4af9ed3ecc52df9dfab1f36e06e91581937b354b691c58e55fb8f601f2c1b302"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_4/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_4/epochs.jsonl",
+    "sha256": "de12ab14fbd2b74e2660ff4c3add880094802a85d5018315a15185b0dd266070"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_4/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_4/result.json",
+    "sha256": "97248798f8ab5617d15609491a63c0de92a2ff0ef27ea24563815d62bedf8a85"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/propagation/fold_4/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/propagation/fold_4/test_predictions.json",
+    "sha256": "b4b6da193f12c2057c2de369d5dfd789f14eea518459212d76221765d0f08a9b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/requirements.freeze.txt",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/requirements.freeze.txt",
+    "sha256": "79a26a294a69c3bed6ae462db4dbfd65cc68e9abf185be79b444b1430be69508"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/config.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/config.py",
+    "sha256": "df5805a83d7c218cd1132c8514741fed9f294402040895982f361b720c93ce5e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/data.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/data.py",
+    "sha256": "8b82611147eac9bdd11b75e338f86dd58a2c94528fdb54683770e6dbf444e327"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/data_process.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/data_process.py",
+    "sha256": "083dd04586d0aad41ce27d069d60bfee9dc38acbfab23c348b7745994c446716"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/layers.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/layers.py",
+    "sha256": "87571c40128865a291c7715266dc1cb8e87dc5e9090c310b3e2d26de5b2db872"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/models.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/models.py",
+    "sha256": "8432d18f25798f0697562b46ecf45fe886fba8babd8f7ff6a2282af441e77bc2"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/path_zh.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/path_zh.py",
+    "sha256": "eeb2dd368f9420966a16771d0a5e563a3d156b9f64c5466435c441a589b1f947"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/run_baseline.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/run_baseline.py",
+    "sha256": "d764febb0132cbff4c8b34fe2a3b088421216f0f1aec743add193dc9d44ff5ae"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/run_paper.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/run_paper.py",
+    "sha256": "2c51bb89478965d05353c113cc4aa44a1807767922b5953c0f6e97bfde60416b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/train_dynamic.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/train_dynamic.py",
+    "sha256": "e7beb785765c6ddf1ce9673e2cafeae75cea264113133c2be014fc981ef1291b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/source/util.py",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/source/util.py",
+    "sha256": "3c2d0f5c2d09b6d4b86dbe6f45dfd915dbb59904873d142ff563d10ee0490a84"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/splits.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/splits.json",
+    "sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_0/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_0/epochs.jsonl",
+    "sha256": "e6dd92aba20718885284abf742a539880d611c51aa1b49328eddd9cea42fda12"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_0/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_0/result.json",
+    "sha256": "b457c9af270a055eb6a776fd0c2a64623d54b1433a4bf8be086300d90058cb77"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_0/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_0/test_predictions.json",
+    "sha256": "c9e6f135f15eaff42209e5f8cbda2fcc835f786fbf777f6bf463cb02014f17db"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_1/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_1/epochs.jsonl",
+    "sha256": "3dab4e19b76439d625ca60fa6dbb7511166c3fd1cc10f951e82a29dea9c6d1e9"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_1/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_1/result.json",
+    "sha256": "a5a87f99880466d5cece7d4ece52989ee4d4a00922d99f63d807f85c7cb48765"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_1/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_1/test_predictions.json",
+    "sha256": "7238eaefaafc04dc2f5e253fd4031da958cf58f6b60dfcb561972d84b50edf28"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_2/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_2/epochs.jsonl",
+    "sha256": "8fe5690beacf332abac74e41c3174bcbbd38ff31f783e305bc3a1513441fb302"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_2/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_2/result.json",
+    "sha256": "20c83bcbbfbf5ebc95ece37b8cf84d105385bcfbc6678fbbf6e61de8b59e792e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_2/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_2/test_predictions.json",
+    "sha256": "75581b7d7bc10d7803077ac15b35b1826c1c081ef1dab07bdab70fcd394d2207"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_3/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_3/epochs.jsonl",
+    "sha256": "889c92fe4bed375aefaa2ce8d15d6960f83cd91dabf7c9062449d1cd8b948cb6"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_3/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_3/result.json",
+    "sha256": "db60b73b12ea1e4b64cdb502443d058bfdc84d5665fcd28292e1f108f18418b1"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_3/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_3/test_predictions.json",
+    "sha256": "7c96d95841ec5fa90833049a99ccb54a3a8de23509ec8f8749666cd4e11f1a2a"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_4/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_4/epochs.jsonl",
+    "sha256": "657833d2eca10837ee7ba99e5b688968f2270f990a67de3503c71a5e443695a9"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_4/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_4/result.json",
+    "sha256": "1b42ff9789b020b165f0988769323207629710b9b90bf819b13e7e9b1dca2655"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/static/fold_4/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/static/fold_4/test_predictions.json",
+    "sha256": "0b7e04617d5cc70a59cc9d9c207f3f9aef98229b4756b661b7ba2a28a1ef0820"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/summary.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/summary.json",
+    "sha256": "f43c701452dc53549b9228a282775f4524e4129e195906cc52da447ea8037b73"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_0/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_0/epochs.jsonl",
+    "sha256": "3180145a7647fa2d73932f8c64ebb5a7affa0a365ae8a4a6caae86b8307f294c"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_0/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_0/result.json",
+    "sha256": "9cbc1d22ef5aea0ab773892f7114e57123dd10046ffd7dee256d0a36ddca5c7e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_0/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_0/test_predictions.json",
+    "sha256": "a3a1b721333988e4fdc801770bb6e86d966467713e64ffd86bc9f61976638887"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_1/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_1/epochs.jsonl",
+    "sha256": "d532c04d907f2fe8bc23ac379c6fa8ea12ab9516b17d900a8e2794010ebe283c"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_1/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_1/result.json",
+    "sha256": "2f1f5cb8afa800add2d88944b7ebbf7f9f8cb35c6906dde029a704791af630d6"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_1/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_1/test_predictions.json",
+    "sha256": "fb6132982107f811eace180615d43ebe5392173eca91029731d3c0bc7ca6a2de"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_2/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_2/epochs.jsonl",
+    "sha256": "529267d9cb050a459a322f77d9aebca4c9501e65263f8a73b0e1a779b29fb6ea"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_2/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_2/result.json",
+    "sha256": "04194eb20e6a71b5498d531ee3a18f3734fdc058031258a93d640c08ba1d7b99"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_2/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_2/test_predictions.json",
+    "sha256": "7b717ca8e4b2ae538912ad7ebf1ee9948879277114bf8adc9059ea053cdf7ecd"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_3/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_3/epochs.jsonl",
+    "sha256": "b454621867806183d5e7a04a18cab605c6f9da09515a15474d03c4450f316083"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_3/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_3/result.json",
+    "sha256": "786ee6f7e6683fbb24ca8b179f167bf9c503373a52f84c7868b837fa954f5e24"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_3/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_3/test_predictions.json",
+    "sha256": "bf04e0395c57f9137f10e022fa466d1bbecea7227f4aea141f0393359085189a"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_4/epochs.jsonl",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_4/epochs.jsonl",
+    "sha256": "5840ff459e69abf919f9d3612092c4186a27dbcb3ea1338d8b7ff644b40c912b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_4/result.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_4/result.json",
+    "sha256": "85d808b353bcceb4d21a1d26fda913ae7fee0fc56c9ce71809f400c951084d9a"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_ablations_checkpointed/wotf/fold_4/test_predictions.json",
+    "archive": "runs/baseline_artifacts/pheme_ablations_checkpointed/wotf/fold_4/test_predictions.json",
+    "sha256": "705d614fb4c5bee0a7c4007c56453f3523ff30973ed30b9eaf4ad57a4d7d3c3e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/config.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/config.json",
+    "sha256": "19b26aff8d4ac136a106dfefa05fc146ead1cc4a86f18ea4899d58413deff217"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/comments_percent_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/comments_percent_0.json",
+    "sha256": "6b9e95ae944eace21363a385ea906d2ffb35ad85071c76498ee785c652fbf502"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/comments_percent_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/comments_percent_100.json",
+    "sha256": "19997d08c5ceaa8217943b98abba318743f6ce18cdd491e0c9e64fa7855b2a4a"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/comments_percent_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/comments_percent_20.json",
+    "sha256": "8b511f5e0d779fb9c9303e6d6e1c400b5b752c17a026a0c0d86cefa66c61aeee"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/comments_percent_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/comments_percent_40.json",
+    "sha256": "0392ca4eb42aab87f1a5c36a0f726ef47adc8a80d1fd57faf44b006a878af0c1"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/comments_percent_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/comments_percent_60.json",
+    "sha256": "c3e5894741be9c8b7f6188535f770ebfc52af2d7aa75dbb70cbae5dba47e3902"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/comments_percent_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/comments_percent_80.json",
+    "sha256": "5f97f6cb3f548824d0293ea0f5ed9eb947a3e29add9446c4bc023593f57b5b72"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/minutes_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/minutes_0.json",
+    "sha256": "861ea622ab72b4e7b3d8816f313647e1a510d1fadde55b745431e9154aebf4c6"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/minutes_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/minutes_100.json",
+    "sha256": "10fea5a46435c3f0779fbe74d0d9b50c212e0471045fb01b525f5ed62cc54a8c"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/minutes_120.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/minutes_120.json",
+    "sha256": "de18313be3b498f02f1d37c41797748b3b8cbece02098a9879e9a76dc329d983"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/minutes_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/minutes_20.json",
+    "sha256": "748bb9cf67bedd4d144abe51a8508036a5dc50d423f55c064407f66ba4de3ce1"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/minutes_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/minutes_40.json",
+    "sha256": "4c13a5f3b37ea3f952eb25b33815bf9aa8f8415556ba56f6a717400f9f1d674e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/minutes_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/minutes_60.json",
+    "sha256": "f41a29e5fd2d7b413475ca90ee4c8b0c2c10e6b1ae6a8bb89d73beb1f6cef568"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_0/minutes_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_0/minutes_80.json",
+    "sha256": "4d0bf4215eee96fa1b735f96cd14ffba0aa09dd7116ba2b9b1433d7bbd08aed2"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/comments_percent_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/comments_percent_0.json",
+    "sha256": "3a8dd2596127f5a33044e6ece63d4172c2da2c789344bf09e957c8f684a77c89"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/comments_percent_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/comments_percent_100.json",
+    "sha256": "1df41415c5abab8eebd079e11b25fa566082a9648b1bc7e729d76af96f973f16"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/comments_percent_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/comments_percent_20.json",
+    "sha256": "969902e6cefe7b88895c44615b626fdcd06f57a33d6084664483cfbff9fae898"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/comments_percent_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/comments_percent_40.json",
+    "sha256": "c8937c4db886a1cdd019232ce1f5f4ed0edc47014ce8b48a8e0fe6d162e75640"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/comments_percent_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/comments_percent_60.json",
+    "sha256": "7bfbd33c0f85c8e8cc0ad25be6515b760478f6aaf629bfbc9564f53551a142b0"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/comments_percent_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/comments_percent_80.json",
+    "sha256": "cfd2bb6e585cf1c8e7a5d8d3218158a3f719471c95339cdfb1db9929c847b40a"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/minutes_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/minutes_0.json",
+    "sha256": "373540a21edb494d949ac97b976a1e072ece8abc4ed03f17dc51f9cb79ea3eb9"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/minutes_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/minutes_100.json",
+    "sha256": "0abf20729b49eb73e16fb164c069ea78a4e97b135d107d0527f71f5c482a2de0"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/minutes_120.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/minutes_120.json",
+    "sha256": "29dd704661f6b31892b508eefcd7b15f15c43e2e819b96ad4cfbb5b3b4f1d31a"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/minutes_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/minutes_20.json",
+    "sha256": "ad21827fca2e50fff7aabf4313aa551e1a5b96e7b3059273ad957ca760ac0409"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/minutes_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/minutes_40.json",
+    "sha256": "fcd5c69471fc5cad98d02d99cf41135ef5ffee4664671e532704bd0f91e73f26"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/minutes_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/minutes_60.json",
+    "sha256": "d53e4d17655ad518213df8952d17054256a6e6b564b44d9533962ac93f765567"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_1/minutes_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_1/minutes_80.json",
+    "sha256": "45c66db2c5ad8431e5d328b5995c178d5a493342a55cd7b6243fca92dccc7ff7"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/comments_percent_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/comments_percent_0.json",
+    "sha256": "549404ed0bb260b15455a8616118be198a9aa1071cfa303f062b5a2b9b642a37"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/comments_percent_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/comments_percent_100.json",
+    "sha256": "0bbe405d1781b565606fdf0a6ae22c3689f5454f7cf73ac836278daf698db8e4"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/comments_percent_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/comments_percent_20.json",
+    "sha256": "319a9f32699c20c0e35e5b19390d293c6d0988ccb69cef91a3819ce1ba77c3aa"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/comments_percent_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/comments_percent_40.json",
+    "sha256": "4e68917ec11681daf0cde0f8cd3397a7518bbac94f77e7d53b7bb970df282128"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/comments_percent_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/comments_percent_60.json",
+    "sha256": "4c2f01c31f6323259c95d6989423619ad87397a09422cd96529a761ed9d13757"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/comments_percent_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/comments_percent_80.json",
+    "sha256": "cd52cf7159a7369477a792c4d558b72c2b6f326edcf11893509f0e1d6f05926e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/minutes_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/minutes_0.json",
+    "sha256": "d543397e9c36ebb24a181041930facd13287e21ff08411cdff3b9fa8b7c92109"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/minutes_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/minutes_100.json",
+    "sha256": "3a08a3f268bee639bc66fc8fe47bceacf3502423288edf2f496a59f606d33d68"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/minutes_120.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/minutes_120.json",
+    "sha256": "abccd04145661c9181733979d1068a5723922ee13f7abbfd0c5d02906fc45ca4"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/minutes_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/minutes_20.json",
+    "sha256": "1923d06f65930871cd47d025963ffefa3d4d670f672675cdf4e51c71f2d97676"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/minutes_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/minutes_40.json",
+    "sha256": "fc34b350a3df41be2717db69fcae327ae442fdd64961dc97ae591c2f7f5df8c7"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/minutes_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/minutes_60.json",
+    "sha256": "5b59c489ace0a3d49236f62be18f8f8243f4638e4a220f8feb2f076685ba134c"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_2/minutes_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_2/minutes_80.json",
+    "sha256": "a8bb497a5abd68f67cd1d7f11c5648401ad5cddd51a90b70d32346e296ae9f41"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/comments_percent_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/comments_percent_0.json",
+    "sha256": "d15808c1d25c731d9521f23fd0b418e82e319ff3ea4e2c1542abf250fc01caaf"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/comments_percent_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/comments_percent_100.json",
+    "sha256": "5d7f211efc19d6dfcd761164c8b27fa7a1878678ace6d2869ce48305b0237eef"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/comments_percent_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/comments_percent_20.json",
+    "sha256": "70c8563f3dd615347457e88bf7eab4227b7eaca5636f6da595fc49f951f191ec"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/comments_percent_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/comments_percent_40.json",
+    "sha256": "a4df2a5475acc52775342d4fc3415c39951f50b22d260a5aa3e58fe2e0b488a1"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/comments_percent_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/comments_percent_60.json",
+    "sha256": "3347ba98d320e91ac2a44ea507102a86fbe1de685bce8d27040b5b3a4b35383e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/comments_percent_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/comments_percent_80.json",
+    "sha256": "78506810aa5ce30623c65b875447e13bbaf145aab50e12b4e379b7936c2eb2a6"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/minutes_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/minutes_0.json",
+    "sha256": "f285f0abc09e736abef7ea4ab5e7625a66e0908d0e720eb49b47cf78da6965f4"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/minutes_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/minutes_100.json",
+    "sha256": "114fac04ef099f3d377335a99766ab3d51b83a9e39db7c1d25b468d116250e86"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/minutes_120.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/minutes_120.json",
+    "sha256": "0dac67e86c1c6b8313a4d821e4bb6fcc44abfc9560d1fa02182bae866bf1e43d"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/minutes_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/minutes_20.json",
+    "sha256": "391614f323d16509d757a044cccf2183e930ab1492a393f0442a2a78014a9f31"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/minutes_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/minutes_40.json",
+    "sha256": "141ad0bf96146a20717cbde1bab7a55178843ee14904e8ea6130c35e1a91029b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/minutes_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/minutes_60.json",
+    "sha256": "e02602c4c976bf7f4ec11f5586294c53373123e6c9190ac9c2ee675e05e9d599"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_3/minutes_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_3/minutes_80.json",
+    "sha256": "959714554a7c6921e6b175a9860f76ac0b711de73b611bf1eff4c69bdcb6219a"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/comments_percent_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/comments_percent_0.json",
+    "sha256": "5827082b77dd953864a5b1b4e26396a916ae07d089a9e6867255d506b225053f"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/comments_percent_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/comments_percent_100.json",
+    "sha256": "6e9e6cf155e65c57386743d5ff382c5d5964d694e1847e81196e16327a327f4b"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/comments_percent_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/comments_percent_20.json",
+    "sha256": "bc20ee653b3137a8ae8b1d72c6b2f8e1d9d660ef00379329b9e4af601211f523"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/comments_percent_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/comments_percent_40.json",
+    "sha256": "caaf27a33567e886d708e4a5d912be6a7bd5ae66dd3e0ecd7216db2684b5a5ff"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/comments_percent_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/comments_percent_60.json",
+    "sha256": "ca64e4aa967662c36127c43c8250b8400b1f07e4e1106ef740ff92c2b0fee46d"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/comments_percent_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/comments_percent_80.json",
+    "sha256": "12adcee65399a179bc33db4d31aef137533572bb4d3f07b638b1081735808f63"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/minutes_0.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/minutes_0.json",
+    "sha256": "3e36b22fda7f4667d3fd6781bc84836d0c230c15d5a03c9322b4aa6b00f50651"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/minutes_100.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/minutes_100.json",
+    "sha256": "6364cced848de75309987dddd40e20cfa418b2fc45e6c32bcbd8eab5619a5b67"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/minutes_120.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/minutes_120.json",
+    "sha256": "4e3587e870e4bb397fcf84b2be05214e3f6abdf3430e622315fe02785f0495d6"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/minutes_20.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/minutes_20.json",
+    "sha256": "eb9bf5f587cdcfd6f454c35779aec1ccda48bb99fb2e5557b40f93f9b2132dcc"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/minutes_40.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/minutes_40.json",
+    "sha256": "e8c630cddc2d5fcfe3c0453dbf35ed40035b6f94c294bf7d593e4f34c6d4e895"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/minutes_60.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/minutes_60.json",
+    "sha256": "2e45a79af762094dc7352f4bc0f204a31bb35a264e72a9b41feebb0d300fd3aa"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/fold_4/minutes_80.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/fold_4/minutes_80.json",
+    "sha256": "d6a54830b5deb8e13bef06b008068f83d0e2bbee2d3736fb1bc969823a0a0701"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/graph_verification.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/graph_verification.json",
+    "sha256": "7ac63137c5b17739eafc18acb1fcd181a11f989afc44c82e01dc563f4f4d8357"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_evaluation/summary.json",
+    "archive": "runs/baseline_artifacts/pheme_early_evaluation/summary.json",
+    "sha256": "41fe32b4c14794df64c196e350c85f160395a576d72ac32fee33bbe002b40941"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_reload_verified/fold_0.json",
+    "archive": "runs/baseline_artifacts/pheme_reload_verified/fold_0.json",
+    "sha256": "44e56b7bb3c90d2d4d6461e3f18ac09a48b17a282da73b2613c04a535c73e072"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_reload_verified/fold_1.json",
+    "archive": "runs/baseline_artifacts/pheme_reload_verified/fold_1.json",
+    "sha256": "3cf97151e74820390b1258deac7a18f914841da1c1a913c707ec2de2dd92201c"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_reload_verified/fold_2.json",
+    "archive": "runs/baseline_artifacts/pheme_reload_verified/fold_2.json",
+    "sha256": "6004496201b438682952d4fa63a974c2410c85f29fd0a4045ca72e03b223c28e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_reload_verified/fold_3.json",
+    "archive": "runs/baseline_artifacts/pheme_reload_verified/fold_3.json",
+    "sha256": "15878ded2d52bbfba66a085c240cd67a3b361f71acdbb273ae7d8c6cc87995b3"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_reload_verified/fold_4.json",
+    "archive": "runs/baseline_artifacts/pheme_reload_verified/fold_4.json",
+    "sha256": "1c1fdedb93aad0148d46f1bd428b6378550076a941260e1eb37537570c5a6b9e"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_reload_verified/summary.json",
+    "archive": "runs/baseline_artifacts/pheme_reload_verified/summary.json",
+    "sha256": "fad4446aa86e9393975a3075730b77377b92b49403abc3bb4b1a737bedec2921"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_graphs_seed2026/provenance.json",
+    "archive": "runs/baseline_artifacts/pheme_early_graphs_seed2026/provenance.json",
+    "sha256": "18e57f2991af0ab7fd2052593655e9f83ec79ab888024f1ffdec5e061725500d"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_graphs_seed2026/lossless_compression.json",
+    "archive": "runs/baseline_artifacts/pheme_early_graphs_seed2026/lossless_compression.json",
+    "sha256": "5eff21348719f8f6ddff24f839836252b68fd67cf393078f5e75668563bdf577"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_graphs_seed2026/provenance_before_lossless_compression.json",
+    "archive": "runs/baseline_artifacts/pheme_early_graphs_seed2026/provenance_before_lossless_compression.json",
+    "sha256": "17e2b76d38935a8782bf4b1bf042b9e4b152673c5de18b8d480288ee3b74c7d1"
+  },
+  {
+    "source": "/root/autodl-tmp/ddgcn-runs/pheme_early_graphs_seed2026/audit.json",
+    "archive": "runs/baseline_artifacts/pheme_early_graphs_seed2026/audit.json",
+    "sha256": "a6a54223ef7cf2ecd0d1be098cab27c1e56e27be4afce835a4b3ef1516317523"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "missing_inputs_rejected": true,
+  "input_changes_detected": true,
+  "interrupted_save_preserves_checkpoint": true,
+  "invalid_arguments_rejected_before_output": true,
+  "inputs_match_previous_baseline": true,
+  "split_matches_previous_baseline": true,
+  "five_epochs_completed": true,
+  "best_epoch_selection_correct": true,
+  "test_metrics_recomputed_from_predictions": true,
+  "test_post_ids_unique": true,
+  "current_model_sources_match_training_snapshot": true,
+  "independent_checkpoint_reload_passed": true,
+  "independent_predictions_identical": true,
+  "independent_metrics_identical_except_float_loss": true,
+  "independent_loss_absolute_difference": 1.243923075655573e-09
+}

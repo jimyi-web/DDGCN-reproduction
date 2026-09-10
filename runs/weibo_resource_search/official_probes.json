@@ -1,0 +1,98 @@
+[
+  {
+    "name": "forks_html",
+    "url": "https://github.com/MengzSun/DDGCN/forks",
+    "checked_utc": "2026-09-09T06:43:59.501865+00:00",
+    "status": 200,
+    "final_url": "https://github.com/MengzSun/DDGCN/forks",
+    "bytes": 201887,
+    "sha256": "5b5fc0f9db40648c3a8570ae486db0ae67fada933091140553f72c19751d494d"
+  },
+  {
+    "name": "releases_html",
+    "url": "https://github.com/MengzSun/DDGCN/releases",
+    "checked_utc": "2026-09-09T06:43:59.503071+00:00",
+    "status": 200,
+    "final_url": "https://github.com/MengzSun/DDGCN/releases",
+    "bytes": 183672,
+    "sha256": "f349b671727604e3a659e75dacf8eb86137c5650ff5c1fe7777a0a5b2d78346d"
+  },
+  {
+    "name": "cnprobase_docs",
+    "url": "https://kw.fudan.edu.cn/apis/cnprobase/",
+    "checked_utc": "2026-09-09T06:43:59.503989+00:00",
+    "status": 200,
+    "final_url": "https://kw.fudan.edu.cn/apis/cnprobase/",
+    "bytes": 9478,
+    "sha256": "0958a18c2f06aab609bb3eb4d808357519c5ca6973857a6f8aff86efd94cf1fb"
+  },
+  {
+    "name": "entity_docs",
+    "url": "https://kw.fudan.edu.cn/apis/qa/",
+    "checked_utc": "2026-09-09T06:43:59.507882+00:00",
+    "status": 200,
+    "final_url": "https://kw.fudan.edu.cn/apis/qa/",
+    "bytes": 7549,
+    "sha256": "be3beca594a9808e13a7d349e4b2187c5e4b24efbf0d7180d66e431f9ebf62fa"
+  },
+  {
+    "name": "cnprobase_search",
+    "url": "https://kw.fudan.edu.cn/cnprobase/search/?entity=复旦大学&mention=复旦大学",
+    "checked_utc": "2026-09-09T06:43:59.511742+00:00",
+    "status": 200,
+    "final_url": "https://kw.fudan.edu.cn/cnprobase/search/?entity=%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6&mention=%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6",
+    "bytes": 10396,
+    "sha256": "4398c110fe011e463c628ad662cb6b00a49649166738fd14881389da1f02dcc0"
+  },
+  {
+    "name": "linking_released",
+    "url": "http://shuyantech.com/entitylinkingapi?q=复旦大学位于上海",
+    "checked_utc": "2026-09-09T06:44:00.205423+00:00",
+    "status": 404,
+    "final_url": "http://shuyantech.com/entitylinkingapi?q=%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6%E4%BD%8D%E4%BA%8E%E4%B8%8A%E6%B5%B7",
+    "bytes": 162,
+    "sha256": "766c1d6bcb81d3e983fb7adbc19c616d7fc01dafb7893738edc242e2adc59c07"
+  },
+  {
+    "name": "linking_documented",
+    "url": "http://shuyantech.com/api/entitylinking/cutsegment?q=复旦大学位于上海",
+    "checked_utc": "2026-09-09T06:44:00.213569+00:00",
+    "status": 404,
+    "final_url": "http://shuyantech.com/api/entitylinking/cutsegment?q=%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6%E4%BD%8D%E4%BA%8E%E4%B8%8A%E6%B5%B7",
+    "bytes": 162,
+    "sha256": "766c1d6bcb81d3e983fb7adbc19c616d7fc01dafb7893738edc242e2adc59c07"
+  },
+  {
+    "name": "concept_released",
+    "url": "http://shuyantech.com/api/cnprobase/concept?q=复旦大学",
+    "checked_utc": "2026-09-09T06:44:00.223924+00:00",
+    "status": 404,
+    "final_url": "http://shuyantech.com/api/cnprobase/concept?q=%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6",
+    "bytes": 162,
+    "sha256": "766c1d6bcb81d3e983fb7adbc19c616d7fc01dafb7893738edc242e2adc59c07"
+  },
+  {
+    "name": "concept_https",
+    "url": "https://shuyantech.com/api/cnprobase/concept?q=复旦大学",
+    "checked_utc": "2026-09-09T06:44:00.501770+00:00",
+    "error": "HTTPSConnectionPool(host='shuyantech.com', port=443): Max retries exceeded with url: /api/cnprobase/concept?q=%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'shuyantech.com'. (_ssl.c:1149)\")))"
+  },
+  {
+    "name": "cnprobase_intro",
+    "url": "https://kw.fudan.edu.cn/cnprobase/",
+    "checked_utc": "2026-09-09T06:44:00.519955+00:00",
+    "status": 200,
+    "final_url": "http://kw.fudan.edu.cn/cnprobase/search/",
+    "bytes": 5734,
+    "sha256": "5c36f4a5d656ecfbacda0864c1b3880f64c0baa5ab4df49d7ba1646326b22424"
+  },
+  {
+    "name": "author_tools",
+    "url": "https://www.atailab.cn/topics/pdf/5%20%E6%8F%90%E5%8F%96%E5%AE%9E%E4%BD%93%E5%B7%A5%E5%85%B7.pdf",
+    "checked_utc": "2026-09-09T06:44:00.523759+00:00",
+    "status": 200,
+    "final_url": "https://www.atailab.cn/topics/pdf/5%20%E6%8F%90%E5%8F%96%E5%AE%9E%E4%BD%93%E5%B7%A5%E5%85%B7.pdf",
+    "bytes": 58423,
+    "sha256": "86c64139349a0d8438ded7a5cba3e677fab30c92dd51b9565c6179d3dbc38400"
+  }
+]

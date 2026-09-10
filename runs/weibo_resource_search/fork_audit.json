@@ -1,0 +1,358 @@
+[
+  {
+    "user": "Dante-cjh",
+    "part": "root",
+    "url": "https://github.com/Dante-cjh/DDGCN",
+    "status": 200,
+    "paths": [
+      "/",
+      "README.md",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": [
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\u003c/a\\u003e",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\u003c/a\\u003e).\\u003c/p\\u003e\\n\\u003cp",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\u003c/a\\u003e.\\nThe"
+    ]
+  },
+  {
+    "user": "Dante-cjh",
+    "part": "data",
+    "url": "https://github.com/Dante-cjh/DDGCN/tree/master/data",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "Dante-cjh",
+    "part": "preprocess",
+    "url": "https://github.com/Dante-cjh/DDGCN/tree/master/preprocess",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "model",
+      "preprocess",
+      "preprocess/entity_pre_zh.py",
+      "preprocess/getTwittergraph.py",
+      "preprocess/getWeibograph.py",
+      "preprocess/isA_relation_access_2.py",
+      "preprocess/pheme_pre.py",
+      "preprocess/stop_words.txt",
+      "preprocess/top_5000_corpus_pheme.txt",
+      "preprocess/top_5000_corpus_weibo.txt",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "Dante-cjh",
+    "part": "releases",
+    "url": "https://github.com/Dante-cjh/DDGCN/releases",
+    "error": "HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /Dante-cjh/DDGCN/releases (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1149)')))"
+  },
+  {
+    "user": "Peng057",
+    "part": "root",
+    "url": "https://github.com/Peng057/DDGCN",
+    "status": 200,
+    "paths": [
+      "/",
+      "README.md",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": [
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\u003c/a\\u003e",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\u003c/a\\u003e).\\u003c/p\\u003e\\n\\u003cp",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\u003c/a\\u003e.\\nThe"
+    ]
+  },
+  {
+    "user": "Peng057",
+    "part": "data",
+    "url": "https://github.com/Peng057/DDGCN/tree/master/data",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "Peng057",
+    "part": "preprocess",
+    "url": "https://github.com/Peng057/DDGCN/tree/master/preprocess",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "model",
+      "preprocess",
+      "preprocess/entity_pre_zh.py",
+      "preprocess/getTwittergraph.py",
+      "preprocess/getWeibograph.py",
+      "preprocess/isA_relation_access_2.py",
+      "preprocess/pheme_pre.py",
+      "preprocess/stop_words.txt",
+      "preprocess/top_5000_corpus_pheme.txt",
+      "preprocess/top_5000_corpus_weibo.txt",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "Peng057",
+    "part": "releases",
+    "url": "https://github.com/Peng057/DDGCN/releases",
+    "status": 200,
+    "paths": [],
+    "links": []
+  },
+  {
+    "user": "Zhoujie-SONG",
+    "part": "root",
+    "url": "https://github.com/Zhoujie-SONG/DDGCN",
+    "status": 200,
+    "paths": [
+      "/",
+      "README.md",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": [
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\u003c/a\\u003e",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\u003c/a\\u003e).\\u003c/p\\u003e\\n\\u003cp",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\u003c/a\\u003e.\\nThe"
+    ]
+  },
+  {
+    "user": "Zhoujie-SONG",
+    "part": "data",
+    "url": "https://github.com/Zhoujie-SONG/DDGCN/tree/master/data",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "Zhoujie-SONG",
+    "part": "preprocess",
+    "url": "https://github.com/Zhoujie-SONG/DDGCN/tree/master/preprocess",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "model",
+      "preprocess",
+      "preprocess/entity_pre_zh.py",
+      "preprocess/getTwittergraph.py",
+      "preprocess/getWeibograph.py",
+      "preprocess/isA_relation_access_2.py",
+      "preprocess/pheme_pre.py",
+      "preprocess/stop_words.txt",
+      "preprocess/top_5000_corpus_pheme.txt",
+      "preprocess/top_5000_corpus_weibo.txt",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "Zhoujie-SONG",
+    "part": "releases",
+    "url": "https://github.com/Zhoujie-SONG/DDGCN/releases",
+    "status": 200,
+    "paths": [],
+    "links": []
+  },
+  {
+    "user": "anshiquanshu66",
+    "part": "root",
+    "url": "https://github.com/anshiquanshu66/DDGCN",
+    "status": 200,
+    "paths": [
+      "/",
+      "README.md",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": [
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\u003c/a\\u003e",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\u003c/a\\u003e).\\u003c/p\\u003e\\n\\u003cp",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\u003c/a\\u003e.\\nThe"
+    ]
+  },
+  {
+    "user": "anshiquanshu66",
+    "part": "data",
+    "url": "https://github.com/anshiquanshu66/DDGCN/tree/master/data",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "anshiquanshu66",
+    "part": "preprocess",
+    "url": "https://github.com/anshiquanshu66/DDGCN/tree/master/preprocess",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "model",
+      "preprocess",
+      "preprocess/entity_pre_zh.py",
+      "preprocess/getTwittergraph.py",
+      "preprocess/getWeibograph.py",
+      "preprocess/isA_relation_access_2.py",
+      "preprocess/pheme_pre.py",
+      "preprocess/stop_words.txt",
+      "preprocess/top_5000_corpus_pheme.txt",
+      "preprocess/top_5000_corpus_weibo.txt",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "anshiquanshu66",
+    "part": "releases",
+    "url": "https://github.com/anshiquanshu66/DDGCN/releases",
+    "status": 200,
+    "paths": [],
+    "links": []
+  },
+  {
+    "user": "lumen2018",
+    "part": "root",
+    "url": "https://github.com/lumen2018/DDGCN",
+    "status": 200,
+    "paths": [
+      "/",
+      "README.md",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": [
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\",
+      "https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0\\u003c/a\\u003e",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\",
+      "https://www.dropbox.com/s/j8x105s60ow997f/all-rnr-annotated-threads.zip?dl=0\\u003c/a\\u003e).\\u003c/p\\u003e\\n\\u003cp",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\",
+      "https://www.dropbox.com/s/xwn5dvqgx2n2vsd/pheme_peocessed_data.zip?dl=0\\u003c/a\\u003e.\\nThe"
+    ]
+  },
+  {
+    "user": "lumen2018",
+    "part": "data",
+    "url": "https://github.com/lumen2018/DDGCN/tree/master/data",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "data/pheme",
+      "model",
+      "preprocess",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "lumen2018",
+    "part": "preprocess",
+    "url": "https://github.com/lumen2018/DDGCN/tree/master/preprocess",
+    "status": 200,
+    "paths": [
+      "README.md",
+      "data",
+      "model",
+      "preprocess",
+      "preprocess/entity_pre_zh.py",
+      "preprocess/getTwittergraph.py",
+      "preprocess/getWeibograph.py",
+      "preprocess/isA_relation_access_2.py",
+      "preprocess/pheme_pre.py",
+      "preprocess/stop_words.txt",
+      "preprocess/top_5000_corpus_pheme.txt",
+      "preprocess/top_5000_corpus_weibo.txt",
+      "requirement.txt"
+    ],
+    "links": []
+  },
+  {
+    "user": "lumen2018",
+    "part": "releases",
+    "url": "https://github.com/lumen2018/DDGCN/releases",
+    "status": 200,
+    "paths": [],
+    "links": []
+  },
+  {
+    "user": "Dante-cjh",
+    "part": "releases_retry",
+    "url": "https://github.com/Dante-cjh/DDGCN/releases",
+    "status": 200,
+    "paths": [],
+    "links": []
+  }
+]

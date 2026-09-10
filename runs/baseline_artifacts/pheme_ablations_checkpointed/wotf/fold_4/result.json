@@ -1,0 +1,39 @@
+{
+  "dataset": "pheme",
+  "model": "wotf",
+  "paper_name": "DDGCN w/o TF",
+  "fold": 4,
+  "seed": 2030,
+  "best_epoch": 4,
+  "validation_accuracy": 0.8641114982578397,
+  "test": {
+    "loss": 0.5622261964070256,
+    "accuracy": 0.8170731707317073,
+    "macro_precision": 0.8027155813555529,
+    "macro_recall": 0.801461624172511,
+    "macro_f1": 0.802076765447667,
+    "legacy_f1": 0.8020881126658647,
+    "per_class_precision": [
+      0.8542234332425068,
+      0.751207729468599
+    ],
+    "per_class_recall": [
+      0.8589041095890411,
+      0.7440191387559809
+    ],
+    "per_class_f1": [
+      0.8565573770491803,
+      0.7475961538461539
+    ],
+    "support": [
+      730,
+      418
+    ]
+  },
+  "split_sizes": [
+    4026,
+    574,
+    1148
+  ],
+  "seconds": 1287.5267448425293
+}

@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="知识工场源于复旦大学GDM实验室，负责人肖仰华">
+    <meta name="keywords" content="知识工场 知识图谱  复旦大学 肖仰华 阳德青 徐波 梁家卿 谢晨昊 Knowledge Works Knowledge Graph">
+    <meta name="author" content="">
+    <link rel="icon" href="/resources/image/favicon.ico">
+
+    <title>CN-Probase</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/resources/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/resources/css/dashboard.css" rel="stylesheet">
+    
+    
+    <script src="/resources/assets/js/ie-emulation-modes-warning.js"></script>
+    
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span>
+            </button>
+            
+    <a class="navbar-brand" href="#">CN-Probase</a>
+
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <!--
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li class="dropdown active">
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-expanded="false"> People <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/people/researchers/">Research Scientists</a></li>
+                        <li><a href="/people/students/">Student</a></li>
+                    </ul>
+                </li>
+                <li><a href="/statistics/basic/">Statistics</a></li>
+                <li><a href="/recruitment/">Recruitment</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+            -->
+            <ul class="visible-xs  nav navbar-nav navbar-right">
+                
+    <li class="active"><a href="/cnprobase/search/">Search</a></li>
+    <li class=""><a href="/cnprobase/apiwiki/">API</a></li>
+    <li class=""><a href="/cnprobase/contributor/">Contributors</a></li>
+        
+    <li><a href="/">Knowledge Works</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                
+    <li class=""><a href="/cnprobase/intro/">Introduction</a></li>
+    <li class="active"><a href="/cnprobase/search/">Search</a></li>
+    <li class=""><a href="/cnprobase/apiwiki/">API</a></li>
+    <!-- <li class=""><a href="/cnprobase/contributor/">Contributors</a></li> -->
+
+    <li><a href="../../../">Knowledge Works</a></li>
+    <footer class="sidebar-footer">
+                Copy Right <span class="fontArial">©</span>
+                2014-2023
+                KW Lab <br> Fudan University
+            </footer>
+
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            
+    <c:if test="${curr_tpl == 'SEARCH'}">
+	
+	<div class="page-header">
+        <h1>Introduction</h1>
+        <h5 class="text-muted">
+CN-Probase is a Chinese Concept Graph that contains 17 millions of entities, 270 thousands of concepts and 33 millions of isA relations. The accuracy of isA relations is more than 95%. Compared to other concept graphs, CN-Probase has two striking advantages. First, it is the largest Chinese Concept Graph and covers most of the common entities. Second, it is strictly organized by entities, which is helpful to understand entities precisely.		</h5>
+    </div>
+	
+    <!-- Search From -->
+    <form action="" method="get" class='form-inline'
+          id='search_form' role='form'>
+        <div class='input-group'>
+            <input type='text' id='search_input' class='form-control'
+                   name='mention' placeholder="entity"> <span class='input-group-btn'>
+								<button class='btn btn-default' id='search_button' type='button'>Search</button>
+							</span>
+        </div>
+        <img class="hidden loadingimg" src="/resources/image/loading.gif">
+        <span class="help-block">e.g., <a href="?mention=%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6&entity=%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6">复旦大学</a>、<a href="?mention=刘德华">刘德华</a></span>
+		<span class="help-block">tip:点击红色实体或概念支持动态扩展</span>
+    
+	</form>
+    <!-- End Search From -->
+    <!-- Print according to the status -->
+    
+
+    <!-- panel panel-default -->
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="/resources/js/jquery.min.js"></script>
+    <script src="/resources/js/jquery.mobile.custom.min.js"></script>
+    <script src="/resources/dist/js/bootstrap.min.js">
+    </script><script src="/resources/js/cnpb_browser.js"></script>
+    <script src="/resources/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+

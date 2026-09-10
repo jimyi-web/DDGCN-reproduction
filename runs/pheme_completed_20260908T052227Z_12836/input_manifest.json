@@ -1,0 +1,46 @@
+{
+  "data/pheme/node2idx_mid.txt": {
+    "bytes": 6398198,
+    "sha256": "3ca4dd5b7f33ed5a298367c21689daf00904a80bad7ede808ed4364bf868b05b"
+  },
+  "data/pheme/mid2text.txt": {
+    "bytes": 12477469,
+    "sha256": "b307f8de77284713009f5bc955edebc21d31b7dc686780d6d3a22a729e05de04"
+  },
+  "data/pheme/pheme_temporal_data/propagation_node_idx.npy": {
+    "bytes": 3166033,
+    "sha256": "5a901a626d22c46fef1f16d20917be1df7da748610ffb9c0d8ec2857dab5b1b4"
+  },
+  "data/pheme/pheme_temporal_data/propagation_node.npy": {
+    "bytes": 11001407,
+    "sha256": "c0dadaae4ae02a0dc1d38564c6ff105b872b0da95d19d1163964906aa4a1f8b5"
+  },
+  "data/pheme/pheme_temporal_data/knowledge_node_idx.npy": {
+    "bytes": 77137869,
+    "sha256": "74fbb839588c662faa8579bbb090ea411c4417652da4919e254e77d721ad4254"
+  },
+  "data/pheme/pheme_temporal_data/knowledge_node.npy": {
+    "bytes": 4531905239,
+    "sha256": "0109192a5e4cb657c20c41bf129a3d8be43b89b49ff7a498678c388ddaedd8f8"
+  },
+  "data/pheme/pheme_temporal_data/label.npy": {
+    "bytes": 51528,
+    "sha256": "4b0eed60f0e5a8b4761357a1dd09a27fe6fbb02078e4d64744fda8fd0e95a4cc"
+  },
+  "data/pheme/pheme_temporal_data/propagation_root_index.npy": {
+    "bytes": 154328,
+    "sha256": "55d8dcf98e334b3a34e4c9f79de75ca61b47e21a9a345715e1f2a74a2cd4b77d"
+  },
+  "bert-base-uncased/config.json": {
+    "bytes": 570,
+    "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20"
+  },
+  "bert-base-uncased/vocab.txt": {
+    "bytes": 231508,
+    "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "bert-base-uncased/pytorch_model.bin": {
+    "bytes": 440473133,
+    "sha256": "097417381d6c7230bd9e3557456d726de6e83245ec8b24f529f60198a67b203a"
+  }
+}

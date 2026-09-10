@@ -1,0 +1,73 @@
+# Datasets, downloaded resources, and local pretrained models
+/data/
+/downloads/
+/bert-base-*
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+# Model weights and generated graph / array caches
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.h5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.pkl.gz
+*.pickle.gz
+checkpoints/
+.cache/
+cache/
+# Python, environments, editors, temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+*.orig
+*.rej
+*.tmp
+*.swp
+*~
+# Runtime logs; retain audit evidence explicitly
+*.log
+*.pid
+!runs/**/*audit*.log
+!runs/*audit*.log
+# Raw observation records remain on the server; keep their manifest
+/runs/**/observations.jsonl
+# Credentials and private configuration
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+credentials.*.json
+*service-account*.json
+*service_account*.json
+secrets/
+.secrets/
+.aws/
+.ssh/
+.netrc
+.pypirc
+# CSV, summaries, predictions, epoch metrics, manifests and audits are tracked.

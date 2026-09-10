@@ -1,4 +1,4 @@
-from scipy.sparse.linalg.eigen.arpack import eigsh
+from scipy.sparse.linalg import eigsh
 import sys, os
 import torch
 import re
@@ -184,10 +184,10 @@ def remove_single_nodepost(p_idx, p_node, k_idx, k_node, y, p_root_idx):
             k_node_new.append(k_node[i])
             y_new.append(y[i])
             p_root_idx_new.append(p_root_idx[i])
-    p_idx_new = np.array(p_idx_new)
-    p_node_new = np.array(p_node_new)
-    k_idx_new = np.array(k_idx_new)
-    k_node_new = np.array(k_node_new)
+    p_idx_new = np.array(p_idx_new, dtype=object)
+    p_node_new = np.array(p_node_new, dtype=object)
+    k_idx_new = np.array(k_idx_new, dtype=object)
+    k_node_new = np.array(k_node_new, dtype=object)
     y_new = np.array(y_new)
     p_root_idx_new = np.array(p_root_idx_new)
     return p_idx_new,p_node_new,k_idx_new,k_node_new,y_new, p_root_idx_new
@@ -1438,6 +1438,14 @@ def loadData_bert(x_propagation_idx,x_propagation_node_indices, x_propagation_no
     return data_list
 
 
+class DualGraphData(Data):
+    """Batch each graph using its own node count."""
+    def __inc__(self, key, value, *args, **kwargs):
+        if key.startswith('x_knowledge_node_indices_') and key.endswith('_edge_index'):
+            return int(self.x_knowledge_node_num.item())
+        return super().__inc__(key, value, *args, **kwargs)
+
+
 class GraphDataset_bert(Dataset):
     def __init__(self, x_propagation_idx,x_propagation_node_indices,x_propagation_node_values,\
                  x_knowledge_idx,x_knowledge_node_indices,x_knowledge_node_values,target, root_idx):
@@ -1529,7 +1537,7 @@ class GraphDataset_bert(Dataset):
         # print('y:', y, y.size())
 
 
-        return Data(
+        return DualGraphData(
                     x = torch.tensor(x_propagation_node_idx,dtype=torch.long),\
                     edge_index = torch.LongTensor(x_propagation_node_indices_0), \
                     edge_values=torch.tensor(x_propagation_node_values_0, dtype=torch.float), \

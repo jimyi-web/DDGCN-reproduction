@@ -1,0 +1,18 @@
+{
+  "python_hash_seed": "2026",
+  "observations_sha256": "9f9cb637d55ad8ff2061008aba8c3838900eabf5a71fb479b7a9e7d52a8a1261",
+  "observation_manifest_sha256": "0942ecc8bf23e7687ce5d601b922baa7ff3ea5fe30cb0fbac8bc1a952e8d6564",
+  "splits_sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff",
+  "mapping_sha256": "3ca4dd5b7f33ed5a298367c21689daf00904a80bad7ede808ed4364bf868b05b",
+  "released_builder_sha256": "05d7733009b28ae404ac6ab0ff2b60f7d3c1e808108d24646a9414138b560059",
+  "builder_sha256": "81d68b2bcb2324378ed98fe71461c340a4ccc01599a08ecfd10e09682f904cf1",
+  "time_policy": "total_seconds; thirds of observed event duration",
+  "pmi_order": "released CSV row order restricted to observed posts",
+  "knowledge_policy": "cached per-post entities/concepts; recompute TF-IDF/PMI from observed rows only",
+  "singleton_policy": "keep all source-only events",
+  "limitations": [
+    "fixed released global vocabulary and external knowledge snapshot; not historically dated knowledge",
+    "percentage deadlines use eventual comment count to define an offline benchmark",
+    "paper does not specify prefix rounding, zero cutoff, or within-prefix stage boundaries"
+  ]
+}

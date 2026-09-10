@@ -1,0 +1,31 @@
+{
+  "dataset": "pheme",
+  "output": "/root/autodl-tmp/ddgcn-runs/pheme_cv_checkpointed",
+  "models": [
+    "completed"
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 5,
+  "batch": 32,
+  "lr": 0.001,
+  "bert_lr": 5e-05,
+  "seed": 2026,
+  "threads": 4,
+  "resume": false,
+  "save_best": true,
+  "device": "cuda:0",
+  "torch": "2.0.1+cu118",
+  "cuda": "11.8",
+  "split": [
+    0.7,
+    0.1,
+    0.2
+  ],
+  "protocol": "stratified five-fold cross-validation"
+}

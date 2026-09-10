@@ -1,0 +1,157 @@
+var WORDNUM = 50;
+
+
+$(document).ready(function () {
+    var word = $("#keyword").val();
+    word = $.trim(word);
+    if (word == "") { return; }
+	
+    getData("entities", word, 0);
+    getData("concepts", word, 0);
+
+    //$(".panel-heading").next(".collapse").collapse();
+});
+
+$(".propager a").click(
+    function () {
+        if ($(this).hasClass("disabled")) {
+            return;
+        }
+        var word = $("#keyword").val();
+        var parentId = $(this).parent().attr("id").split("_");
+        var contentType = parentId[0];
+        var pager = $(this).siblings(".pageNumber").first();
+        var currFrom = parseInt(pager.text())-1;
+        var max = parseInt(pager.attr("max"));
+        var method;
+        if ($(this).hasClass("glyphicon-fast-backward")) {
+            getData(contentType, word, 0);
+        } else if ($(this).hasClass("glyphicon-backward")) {
+            var backfrom = currFrom - WORDNUM < 0 ? 0 : currFrom - WORDNUM;
+            getData(contentType, word, backfrom);
+        } else if ($(this).hasClass("glyphicon-forward")) {
+            var forfrom = currFrom + WORDNUM > max ? max - WORDNUM: currFrom + WORDNUM;
+            getData(contentType, word, forfrom);
+        } else if ($(this).hasClass("glyphicon-fast-forward")) {
+            var forfrom = max - max % WORDNUM;
+            forfrom = forfrom >= max ? max - WORDNUM: forfrom;
+            getData(contentType, word, forfrom);
+        }
+    });
+
+
+function getData(contentType, word, from) {
+	$.getJSON("/cnprobase/api/get" + contentType, {
+		q: word,
+		start: from
+    }, function (result) {
+        console.log(result);
+        //$("#result_title").text("Result: " + word);
+        setStatistic(contentType, word, result);
+        if (contentType == "concepts") {
+            $("#concepts_tbody").empty();
+            if (typeof (result.ret) == "undefined") {
+                setPageNum("concepts_pager", 0, 0);
+            } else {
+                setPageNum("concepts_pager", from + 1, from + WORDNUM);
+                setTable("concepts_tbody", result.ret, from);
+            }
+        }
+        if (contentType == "entities") {
+            $("#entities_tbody").empty();
+            if (typeof (result.ret) == "undefined") {
+                setPageNum("entities_pager", 0, 0);
+            } else {
+                setPageNum("entities_pager", from+1, from + WORDNUM);
+                setTable("entities_tbody", result.ret, from);
+            }
+        }
+    });
+}
+
+function setStatistic(contentType, word, data) {
+    console.log(data);
+    //concole.log(typeof (data));
+    if (typeof (data) == "undefined" || isEmpty(data)) {
+        $("#" + contentType + "_pager .pageNumber").attr("max", 0);
+        $("#" + contentType + "_num").text(0);
+    } else {
+        $("#" + contentType + "_cnt").text(data.count);
+        $("#" + contentType + "_pager .pageNumber").attr("max", data.count);
+    }
+
+}
+
+function setTable(tableId, data, from) {
+    var start = from % 50; // return array contains 50 items
+    var to = start + WORDNUM;
+    to = to > data.length ? data.length : to;
+    console.log(start + "-" + to);
+    for (var i = start; i < to; i++) {
+        $("#" + tableId).append(
+            "<tr><td><a class='table_word'>" + data[i][0] + "</a></td></tr>");
+            //<td>"+ data[i][1] + "</td></tr>");
+    }
+
+}
+
+function setPageNum(pagerId, start, end) {
+    var pager = $("#" + pagerId + " .pageNumber");
+    var from = parseInt(start);
+    var max = parseInt(pager.attr("max"));
+    end = end > max ? max : end;
+    if (end == 0) {
+        $("#" + pagerId + " .pageNumber").text("0-0");
+    } else {
+        $("#" + pagerId + " .pageNumber").text(start + "-" + end);
+    }
+    if (from <= WORDNUM) {
+        pager.prevAll(".glyphicon").addClass("disabled");
+    } else {
+        pager.prevAll(".glyphicon").removeClass("disabled");
+    }
+    if (end == max || max == 0) {
+        pager.nextAll(".glyphicon").addClass("disabled");
+    } else {
+        pager.nextAll(".glyphicon").removeClass("disabled");
+    }
+}
+
+$(document).on("click", ".table_word", function () {
+    var word = $(this).text();
+    $("#search_input").val(word);
+    $("#search_button").click();
+    return false;
+});
+
+$(".panel-heading").on('tap', function () {
+    console.log("tap");
+    console.log($(this).next());
+    $(this).next(".collapse").collapse();
+});
+
+function isEmpty(obj) {
+    for (var name in obj) {
+        return false;
+    }
+    return true;
+};
+
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); // 构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg); // 匹配目标参数
+    if (r != null)
+        return unescape(r[2]);
+    return null; // 返回参数值
+}
+
+$("#search_button").click(function () {
+    var word = $("#search_input").val();
+    console.log(word);
+    if (word == "") {
+        $("#search_input").addClass("bg-danger");
+        return;
+    }
+    $("form .loadingimg").removeClass("hidden");
+    $("#search_form").submit();
+});

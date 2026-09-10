@@ -1,0 +1,197 @@
+{
+  "status": "passed",
+  "folds": [
+    {
+      "status": "passed",
+      "fold": 0,
+      "pid": 16839,
+      "checkpoint_sha256": "bc5ef943970147272dd23b59f290e9b5704b0eaee669e3ceb0f3524a86b889e8",
+      "predictions_sha256": "96879689cc7ae358d64180b01bae6abfd9d2a775a61051aecafef8d162dfc012",
+      "result_sha256": "a9d53af215303b18e5db6fa75b824ead87c6bce8d20f082cf3b3b89b644b916e",
+      "splits_sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff",
+      "source_manifest_verified": true,
+      "input_manifest_verified": true,
+      "prediction_mismatches": 0,
+      "metric_absolute_tolerance": 1e-07,
+      "device": "cuda:0",
+      "test": {
+        "loss": 0.47453863993934964,
+        "accuracy": 0.8547826086956521,
+        "macro_precision": 0.8429704182073849,
+        "macro_recall": 0.8440084364766609,
+        "macro_f1": 0.8434824562618835,
+        "legacy_f1": 0.843489107989494,
+        "per_class_precision": [
+          0.8873626373626373,
+          0.7985781990521327
+        ],
+        "per_class_recall": [
+          0.8837209302325582,
+          0.8042959427207638
+        ],
+        "per_class_f1": [
+          0.8855380397532556,
+          0.8014268727705114
+        ],
+        "support": [
+          731,
+          419
+        ]
+      }
+    },
+    {
+      "status": "passed",
+      "fold": 1,
+      "pid": 17176,
+      "checkpoint_sha256": "b1a4389a30adf5bb7a4c0ab425cf7cbf1c100dbb1e3d10ec53fa6e2ed44aa7f5",
+      "predictions_sha256": "97c93c7b63e9a13bca4d745947d6f0986ec0a399d89063ea931c1e985bde5a4f",
+      "result_sha256": "9bd7bb7b28f986faa2ace0c6c2b7f8c0d84b174dd12291f50e12d8a0dd37b8ef",
+      "splits_sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff",
+      "source_manifest_verified": true,
+      "input_manifest_verified": true,
+      "prediction_mismatches": 0,
+      "metric_absolute_tolerance": 1e-07,
+      "device": "cuda:0",
+      "test": {
+        "loss": 0.5981528639793396,
+        "accuracy": 0.84,
+        "macro_precision": 0.835606848197815,
+        "macro_recall": 0.8130262595130743,
+        "macro_f1": 0.82174688057041,
+        "legacy_f1": 0.8241619157546554,
+        "per_class_precision": [
+          0.8475222363405337,
+          0.8236914600550964
+        ],
+        "per_class_recall": [
+          0.9124487004103967,
+          0.7136038186157518
+        ],
+        "per_class_f1": [
+          0.8787878787878788,
+          0.7647058823529411
+        ],
+        "support": [
+          731,
+          419
+        ]
+      }
+    },
+    {
+      "status": "passed",
+      "fold": 2,
+      "pid": 17627,
+      "checkpoint_sha256": "1be16e5bdf22d28661e439cb3c3ec0c822a0ef6c45083883fae0f86ea5e992f2",
+      "predictions_sha256": "a7851357eee4d2b81763887ccf1968e9ff2a2d6659451dba8aadfd6d58a86420",
+      "result_sha256": "d889225018371ebdc6140bb1ed6914f92a2228a1ec17ce2edb7be7b1904bf3a6",
+      "splits_sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff",
+      "source_manifest_verified": true,
+      "input_manifest_verified": true,
+      "prediction_mismatches": 0,
+      "metric_absolute_tolerance": 1e-07,
+      "device": "cuda:0",
+      "test": {
+        "loss": 0.5427165218021559,
+        "accuracy": 0.8469565217391304,
+        "macro_precision": 0.8334502923976608,
+        "macro_recall": 0.84905758940086,
+        "macro_f1": 0.8389770908315591,
+        "legacy_f1": 0.841181552614373,
+        "per_class_precision": [
+          0.9111111111111111,
+          0.7557894736842106
+        ],
+        "per_class_recall": [
+          0.841313269493844,
+          0.8568019093078759
+        ],
+        "per_class_f1": [
+          0.8748221906116642,
+          0.803131991051454
+        ],
+        "support": [
+          731,
+          419
+        ]
+      }
+    },
+    {
+      "status": "passed",
+      "fold": 3,
+      "pid": 17999,
+      "checkpoint_sha256": "b5808cabe9edfa943292b693b614c921a061d2215aaba4046a1e7ccb401f334a",
+      "predictions_sha256": "1052eb8669f32b8cc1a82b9243f5739a09c104d9e6a089dbfba6f5b9bc3d21c2",
+      "result_sha256": "67c668d74a10c65b04d191bcfc1676d828994ece20e9acdacc58dff1d5030128",
+      "splits_sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff",
+      "source_manifest_verified": true,
+      "input_manifest_verified": true,
+      "prediction_mismatches": 0,
+      "metric_absolute_tolerance": 1e-07,
+      "device": "cuda:0",
+      "test": {
+        "loss": 0.5599809953440791,
+        "accuracy": 0.8617391304347826,
+        "macro_precision": 0.8508575836013281,
+        "macro_recall": 0.8504990384897924,
+        "macro_f1": 0.8506775247012939,
+        "legacy_f1": 0.8506782732655336,
+        "per_class_precision": [
+          0.8907103825136612,
+          0.8110047846889952
+        ],
+        "per_class_recall": [
+          0.8919288645690835,
+          0.8090692124105012
+        ],
+        "per_class_f1": [
+          0.8913192071086808,
+          0.8100358422939068
+        ],
+        "support": [
+          731,
+          419
+        ]
+      }
+    },
+    {
+      "status": "passed",
+      "fold": 4,
+      "pid": 18443,
+      "checkpoint_sha256": "b6da850d23bacf2c8299d27937cb73aaa78c140fbb4ba799d94892b38de6a560",
+      "predictions_sha256": "af5497d493340de112618f20d1ced408b9c77f77c65eee5a3bd490ff99facfb5",
+      "result_sha256": "094bcc5fb6bec3398a7469d6d5eb8be69f3bbb1d96b05ab8e80aa9be7dcf73ae",
+      "splits_sha256": "87025b1c3e27d7b7c072dd663924f382107cd1adfc4f5bee3f2c858c770ebfff",
+      "source_manifest_verified": true,
+      "input_manifest_verified": true,
+      "prediction_mismatches": 0,
+      "metric_absolute_tolerance": 1e-07,
+      "device": "cuda:0",
+      "test": {
+        "loss": 0.5469813103875216,
+        "accuracy": 0.85801393728223,
+        "macro_precision": 0.8484570419837794,
+        "macro_recall": 0.84285573834961,
+        "macro_f1": 0.8454765787898182,
+        "legacy_f1": 0.8456471149448768,
+        "per_class_precision": [
+          0.8805369127516779,
+          0.8163771712158809
+        ],
+        "per_class_recall": [
+          0.8986301369863013,
+          0.7870813397129187
+        ],
+        "per_class_f1": [
+          0.8894915254237288,
+          0.8014616321559075
+        ],
+        "support": [
+          730,
+          418
+        ]
+      }
+    }
+  ],
+  "separate_process_per_fold": true,
+  "predictions_exact": true
+}
